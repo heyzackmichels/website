@@ -32,7 +32,7 @@ Start app.
 npm start
 ```
 
-Go to [localhost:3030](http://localhost:3030).
+Go to [localhost:3000](http://localhost:3000).
 
 ## Built Using
 
