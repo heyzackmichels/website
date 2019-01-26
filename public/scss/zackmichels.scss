@@ -1,0 +1,113 @@
+// npm run scss
+
+// $primary: #253858;
+// $primary-active: #0c2145;
+// $primary-passive: #f2f7ff;
+// $primary-highlight: #3465b7;
+$primary: #333;
+$primary-active: #585858;
+$primary-passive: #ffffff;
+$primary-highlight: #2c6090;
+$primary-highlight-action: #02b9b6;
+$primary-highlight-2: #537492;
+
+html {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: $primary;
+    background-color: $primary-passive;
+}
+// pure css add-on's
+.zack-menu {
+    color: $primary-passive;
+    background-color: $primary;
+    .pure-menu-link {
+        color: #fff;
+        text-decoration: none;
+        &:focus,
+        &:hover,
+        &.active {
+            // background-color: #585858;
+            background-color: $primary-active;
+        }
+    }
+}
+// zack classes
+.profile {
+    display: table;
+    margin: auto;
+    text-align: center;
+    &-pic img {
+        border: 3px solid $primary-highlight;
+        border-radius: 75px;
+        max-width: 150px;
+        max-height: 150px;
+    }
+    &-name {
+        font-size: 200%;
+    }
+    &-title {
+        font-size: 120%;
+        color: $primary-active;
+    }
+}
+.about-block {
+    &-title {
+        color: $primary-highlight;
+        text-align: center;
+        &-icon {
+            font-size: 300%;
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+    &-list {
+        margin-bottom: 20px;
+        &-title {
+            color: $primary-highlight-2;
+            font-size: 120%;
+            margin-bottom: 10px;
+        }
+        & ul {
+            list-style: none;
+            margin: 0;
+            & li:before {
+                content: "• ";
+                color: $primary-highlight;
+                margin-right: 10px;
+                font-weight: 900;
+            }
+        }
+    }
+}
+.connect-block {
+    &-target {
+        color: $primary-highlight-action;
+        text-align: center;
+        display:table;
+        margin: 20px auto;
+        cursor: pointer;
+        &:hover {
+            color: $primary-highlight;
+        }
+        &-icon {
+            font-size: 300%;
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+}
+.nav-link {
+    color: $primary-highlight-action;
+    display: table;
+    margin: 10px auto;
+    cursor: pointer;
+    &:hover {
+        color: $primary-highlight;
+    }
+}
