@@ -21,6 +21,11 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/connect',
             templateUrl: '/ZACK/pages/connect.html',
             controller: ''
+        })
+        .state('travis', {
+            url: '/travis',
+            templateUrl: '/ZACK/pages/travis.html',
+            controller: ''
         });
 
 });     //closes routerApp.config
