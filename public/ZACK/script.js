@@ -28,11 +28,9 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             controller: ''
         });
 
-});     //closes routerApp.config
+}); //closes routerApp.config
 
 routerApp.controller('appControl', function($scope, $window){
-
-    // console.log('script.js');
 
     $scope.aboutActivities = [
         // {
@@ -41,7 +39,7 @@ routerApp.controller('appControl', function($scope, $window){
         {
             title: 'crochet'
             ,examples: [
-                'hats'
+                 'hats'
                 ,'blankets'
                 ,'amigurumi'
             ]
@@ -56,9 +54,9 @@ routerApp.controller('appControl', function($scope, $window){
             ]
         }
         ,{
-            title: 'raspberry pi builds'
+            title: 'raspberry pi'
             ,examples: [
-                    'arcade'
+                 'arcade'
                 ,'guitar pedal'
                 ,'wireless display'
             ]
@@ -72,9 +70,25 @@ routerApp.controller('appControl', function($scope, $window){
             ]
         }
     ];
+    $scope.siteParts = [
+        {
+            title: 'front-end'
+            ,examples: [
+                 'scss'
+                ,'purecss'
+                ,'fontawesome'
+                ,'angular.js'
+                ,'node'
+            ]
+        }
+        ,{
+            title: 'back-end'
+            ,examples: [
+                 'git'
+                ,'express'
+                ,'ngnix'
+            ]
+        }
+    ];
 
-});
-
-
-
-
+}); //closes routerApp.controller

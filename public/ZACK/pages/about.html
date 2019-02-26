@@ -1,63 +1,9 @@
 <div class="pure-g">
-    <div class="pure-u-1 pure-u-lg-1-2">
-        <div class="pure-g">
-            <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1 about-block">
-                <div class="about-block-title">
-                    <i class="fas fa-cog about-block-title-icon"></i>
-                    about zack
-                </div>
-                <div class="about-block-list">
-                    <div class="about-block-list-title">
-                        <i class="fas fa-sticky-note"></i>&nbsp;personal
-                    </div>
-                    <div>
-                        <div class="info-row" 
-                            ng-class="$this.thisOpen ? 'active' : 'inactive'"
-                            ng-repeat="activity in aboutActivities">
-                            <div class="info-row-title"
-                                ng-click="$this.thisOpen = !$this.thisOpen;">
-                                <i class="fas"
-                                ng-class="$this.thisOpen ? 'fa-chevron-down' : 'fa-chevron-right'"></i>
-                                &nbsp;{{activity.title}}
-                            </div>
-                            <div class="info-row-details">
-                                <div ng-repeat="example in activity.examples">
-                                    <i class="fas fa-caret-right"></i>
-                                    &nbsp;{{example}}
-                                </div>
-                            </div>            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1 about-block">
-                <div class="about-block-title">
-                    <i class="fas fa-code about-block-title-icon"></i>
-                    about this site
-                </div>
-                <div class="about-block-list">
-                    <div class="about-block-list-title">
-                        <i class="fas fa-terminal"></i>&nbsp;ingredients
-                    </div>
-                    <ul>
-                        <li>nginx</li>
-                        <li>express</li>
-                        <li>node</li>
-                        <li>angularJS</li>
-                        <li>purecss</li>
-                        <li>fontawesome</li>
-                        <li>scss</li>
-                        <li>git</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="pure-u-1 pure-u-lg-1-2 about-block">
-        <div class="about-block-title">
+    <div class="pure-u-1 pure-u-lg-2-3 about-block">
+        <!-- <div class="about-block-title">
             <i class="fas fa-feather about-block-title-icon"></i>
             what zack does
-        </div>
+        </div> -->
         <div class="about-block-list">
             <div class="about-block-list-title">
                 <i class="fas fa-coffee"></i>&nbsp;work
@@ -74,21 +20,72 @@
                 <i class="fas fa-cogs"></i>&nbsp;skills
             </div>
             <ul>
-				<li>Quickly ideate complex workflows and components using wireframes and sketches</li>
-				<li>Articulate design decisions and workflow architecture choices</li>
-				<li>Initial design and continued iteration of user experience based on activity, needs, and feedback</li>
-				<li>Effectively communicate with stakeholders to define and document their needs and requirements</li>
-				<li>Experience within an Agile development environment</li>
-				<li>Expertise in web markup, including HTML5, CSS3</li>
-				<li>Proficient comprehension of AngularJS framework</li>
-				<li>Good understanding of relational databases and stored procedures.</li>
+                <li>Quickly ideate complex workflows and components using wireframes and sketches</li>
+                <li>Articulate design decisions and workflow architecture choices</li>
+                <li>Initial design and continued iteration of user experience based on activity, needs, and feedback</li>
+                <li>Effectively communicate with stakeholders to define and document their needs and requirements</li>
+                <li>Experience within an Agile development environment</li>
+                <li>Expertise in web markup, including HTML5, CSS3</li>
+                <li>Proficient comprehension of AngularJS framework</li>
+                <li>Good understanding of relational databases and stored procedures.</li>
                 <li>Adept at using media authoring tools, including Photoshop, Illustrator, Indesign</li>
             </ul>
         </div>
-
         <div class="nav-link" ui-sref="connect">
             <i class="fas fa-envelope"></i>&nbsp;connect with zack
         </div>
-
+    </div>        
+    <div class="pure-u-1 pure-u-lg-1-3">
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1 about-block">
+                <div class="about-block-list">
+                    <div class="about-block-list-title">
+                        <i class="fas fa-sticky-note"></i>&nbsp;personal
+                    </div>
+                    <!-- <div> -->
+                        <div class="info-row" 
+                            ng-class="$this.thisOpen ? 'active' : 'inactive'"
+                            ng-repeat="activity in aboutActivities">
+                            <div class="info-row-title"
+                                ng-click="$this.thisOpen = !$this.thisOpen;">
+                                <i class="fas"
+                                ng-class="$this.thisOpen ? 'fa-chevron-down' : 'fa-chevron-right'"></i>
+                                &nbsp;{{activity.title}}
+                            </div>
+                            <div class="info-row-details">
+                                <div ng-repeat="example in activity.examples">
+                                    <i class="fas fa-caret-right"></i>
+                                    &nbsp;{{example}}
+                                </div>
+                            </div>            
+                        </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1 about-block">
+                <div class="about-block-list">
+                    <div class="about-block-list-title">
+                        <i class="fas fa-code"></i>&nbsp;this site
+                    </div>
+                    <div class="info-row" 
+                        ng-class="$this.thisOpen ? 'active' : 'inactive'"
+                        ng-init="$this.thisOpen = true"
+                        ng-repeat="part in siteParts">
+                        <div class="info-row-title"
+                            ng-click="$this.thisOpen = !$this.thisOpen;">
+                            <i class="fas"
+                            ng-class="$this.thisOpen ? 'fa-chevron-down' : 'fa-chevron-right'"></i>
+                            &nbsp;{{part.title}}
+                        </div>
+                        <div class="info-row-details">
+                            <div ng-repeat="example in part.examples">
+                                <i class="fas fa-caret-right"></i>
+                                &nbsp;{{example}}
+                            </div>
+                        </div>            
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

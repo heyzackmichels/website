@@ -6,6 +6,27 @@ $primary-passive: #ffffff;
 $primary-highlight: #2c6090;
 $primary-highlight-action: #02b9b6;
 $primary-highlight-2: #537492;
+$transition-md: .25s;
+$transition-lg: 1s;
+
+@keyframes myMove {
+    0% {
+        transform: scale(0,0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2,1.2);
+        opacity: 0.3;
+    }
+    75% {
+        transform: scale(0.9,0.9);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1,1);
+        opacity: 1;
+    }
+}
 
 html {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -63,7 +84,8 @@ body {
         }
     }
     &-list {
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
+        margin: 10px;
         &-title {
             color: $primary-highlight-2;
             font-size: 120%;
@@ -85,68 +107,60 @@ body {
                 cursor: pointer;
                 color: $primary-active;
                 border-bottom: 1px solid transparent;
+                transition: $transition-lg;
                 &:hover {
                     color: $primary-highlight-action;
                     border-color: $primary-highlight-action;
                 }
+                &:hover i {
+                    color: $primary-highlight;
+                }
                 & i {
                     color: $primary-highlight-action;
-                    transition: .25s;
+                    transition: $transition-lg;
                 }
             }
             &-details {
                 display: none;
                 color: $primary-highlight-2;
                 margin-left: 20px;
+
+                // why doesn't this work?
+                animation: myMove $transition-md linear;
+                
             }
             &.active .info-row-details {
                 display: block;
-                animation: myMove .25s linear;
+                animation: myMove $transition-md linear;
             }
             &.active .info-row-title {
                 &:hover i {
                     transform: rotate(-90deg);
-                    transition: .5s;
+                    transition: $transition-md;
                 }
             }
             &.inactive .info-row-title {
                 &:hover i {
                     transform: rotate(90deg);
-                    transition: .5s;
+                    transition: $transition-md;
                 }
             }
         }
     }
 }
-
-@keyframes myMove {
-    0% {
-        transform: scale(0,0);
-        opacity: 0;
-    }
-    50% {
-        transform: scale(1.2,1.2);
-        opacity: 0.3;
-    }
-    75% {
-        transform: scale(0.9,0.9);
-        opacity: 0.7;
-    }
-    100% {
-        transform: scale(1,1);
-        opacity: 1;
-    }
-}
-
 .connect-block {
     &-target {
         color: $primary-highlight-action;
         text-align: center;
-        display:table;
+        // display:table;
         margin: 20px auto;
         cursor: pointer;
+        border-bottom: 1px solid transparent;
+        transition: $transition-lg;
         &:hover {
             color: $primary-highlight;
+            border-color: $primary-highlight;
+            transition: $transition-md;
         }
         &-icon {
             font-size: 300%;
