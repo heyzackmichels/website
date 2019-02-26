@@ -52,10 +52,49 @@ body {
     list-style: none;
     margin: 0; }
     .about-block-list ul li:before {
-      content: "• ";
+      content: "•";
       color: #2c6090;
       margin-right: 10px;
       font-weight: 900; }
+  .about-block-list .info-row {
+    margin-right: 20px; }
+    .about-block-list .info-row-title {
+      cursor: pointer;
+      color: #585858;
+      border-bottom: 1px solid transparent; }
+      .about-block-list .info-row-title:hover {
+        color: #02b9b6;
+        border-color: #02b9b6; }
+      .about-block-list .info-row-title i {
+        color: #02b9b6;
+        transition: .25s; }
+    .about-block-list .info-row-details {
+      display: none;
+      color: #537492;
+      margin-left: 20px; }
+    .about-block-list .info-row.active .info-row-details {
+      display: block;
+      animation: myMove .25s linear; }
+    .about-block-list .info-row.active .info-row-title:hover i {
+      transform: rotate(-90deg);
+      transition: .5s; }
+    .about-block-list .info-row.inactive .info-row-title:hover i {
+      transform: rotate(90deg);
+      transition: .5s; }
+
+@keyframes myMove {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0; }
+  50% {
+    transform: scale(1.2, 1.2);
+    opacity: 0.3; }
+  75% {
+    transform: scale(0.9, 0.9);
+    opacity: 0.7; }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1; } }
 
 .connect-block-target {
   color: #02b9b6;

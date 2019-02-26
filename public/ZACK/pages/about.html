@@ -8,17 +8,26 @@
                 </div>
                 <div class="about-block-list">
                     <div class="about-block-list-title">
-                        <i class="fas fa-sticky-note"></i>&nbsp;basics
+                        <i class="fas fa-sticky-note"></i>&nbsp;personal
                     </div>
-                    <ul>
-                        <li>Alexandria, VA</li>
-                        <li title="(beer, sourdough, sourkraut, kimchi, hotsauce, cheese)">anything fermentation</li>
-                        <li>ukulele & mandolin</li>
-                        <li>hats & amigurumi</li>
-                        <li><i class="fas fa-running"></i></li>
-                        <li><i class="fas fa-music"></i></li>
-                        <li><i class="fas fa-gamepad"></i></li>
-                    </ul>
+                    <div>
+                        <div class="info-row" 
+                            ng-class="$this.thisOpen ? 'active' : 'inactive'"
+                            ng-repeat="activity in aboutActivities">
+                            <div class="info-row-title"
+                                ng-click="$this.thisOpen = !$this.thisOpen;">
+                                <i class="fas"
+                                ng-class="$this.thisOpen ? 'fa-chevron-down' : 'fa-chevron-right'"></i>
+                                &nbsp;{{activity.title}}
+                            </div>
+                            <div class="info-row-details">
+                                <div ng-repeat="example in activity.examples">
+                                    <i class="fas fa-caret-right"></i>
+                                    &nbsp;{{example}}
+                                </div>
+                            </div>            
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1 about-block">

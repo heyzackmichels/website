@@ -1,9 +1,5 @@
 // npm run scss
 
-// $primary: #253858;
-// $primary-active: #0c2145;
-// $primary-passive: #f2f7ff;
-// $primary-highlight: #3465b7;
 $primary: #333;
 $primary-active: #585858;
 $primary-passive: #ffffff;
@@ -77,14 +73,71 @@ body {
             list-style: none;
             margin: 0;
             & li:before {
-                content: "• ";
+                content: "•";
                 color: $primary-highlight;
                 margin-right: 10px;
                 font-weight: 900;
             }
         }
+        & .info-row {
+            margin-right: 20px;
+            &-title {
+                cursor: pointer;
+                color: $primary-active;
+                border-bottom: 1px solid transparent;
+                &:hover {
+                    color: $primary-highlight-action;
+                    border-color: $primary-highlight-action;
+                }
+                & i {
+                    color: $primary-highlight-action;
+                    transition: .25s;
+                }
+            }
+            &-details {
+                display: none;
+                color: $primary-highlight-2;
+                margin-left: 20px;
+            }
+            &.active .info-row-details {
+                display: block;
+                animation: myMove .25s linear;
+            }
+            &.active .info-row-title {
+                &:hover i {
+                    transform: rotate(-90deg);
+                    transition: .5s;
+                }
+            }
+            &.inactive .info-row-title {
+                &:hover i {
+                    transform: rotate(90deg);
+                    transition: .5s;
+                }
+            }
+        }
     }
 }
+
+@keyframes myMove {
+    0% {
+        transform: scale(0,0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2,1.2);
+        opacity: 0.3;
+    }
+    75% {
+        transform: scale(0.9,0.9);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1,1);
+        opacity: 1;
+    }
+}
+
 .connect-block {
     &-target {
         color: $primary-highlight-action;
