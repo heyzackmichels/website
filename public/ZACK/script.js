@@ -28,14 +28,67 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             controller: ''
         });
 
-});     //closes routerApp.config
+}); //closes routerApp.config
 
 routerApp.controller('appControl', function($scope, $window){
 
-    // console.log('script.js');
+    $scope.aboutActivities = [
+        // {
+        //      title: 'Alexandria, VA'
+        // },
+        {
+            title: 'crochet'
+            ,examples: [
+                 'hats'
+                ,'blankets'
+                ,'amigurumi'
+            ]
+        }
+        ,{
+             title: 'fermentation'
+            ,examples: [
+                 'beer'
+                ,'sourdough'
+                ,'sourkraut'
+                ,'kimchi'
+            ]
+        }
+        ,{
+            title: 'raspberry pi'
+            ,examples: [
+                 'arcade'
+                ,'guitar pedal'
+                ,'wireless display'
+            ]
+        }
+        ,{
+             title: 'stringed instruments'
+            ,examples: [
+                 'ukulele'
+                ,'mandolin'
+                ,'guitar'
+            ]
+        }
+    ];
+    $scope.siteParts = [
+        {
+            title: 'front-end'
+            ,examples: [
+                 'scss'
+                ,'purecss'
+                ,'fontawesome'
+                ,'angular.js'
+                ,'node'
+            ]
+        }
+        ,{
+            title: 'back-end'
+            ,examples: [
+                 'git'
+                ,'express'
+                ,'ngnix'
+            ]
+        }
+    ];
 
-});
-
-
-
-
+}); //closes routerApp.controller
