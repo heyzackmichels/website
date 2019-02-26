@@ -124,6 +124,7 @@ body {
                 display: none;
                 color: $primary-highlight-2;
                 margin-left: 20px;
+                margin-bottom: 10px;
 
                 // why doesn't this work?
                 animation: myMove $transition-md linear;
@@ -171,10 +172,15 @@ body {
 }
 .nav-link {
     color: $primary-highlight-action;
-    display: table;
+    text-align: center;
+    // display: table;
     margin: 10px auto;
     cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: $transition-lg;
     &:hover {
         color: $primary-highlight;
+        border-color: $primary-highlight;
+        transition: $transition-md;
     }
 }
