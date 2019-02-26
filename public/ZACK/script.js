@@ -72,19 +72,19 @@ routerApp.controller('appControl', function($scope, $window){
     ];
     $scope.siteParts = [
         {
-            title: 'front-end'
+            title: 'front?'
             ,examples: [
                  'scss'
                 ,'purecss'
                 ,'fontawesome'
                 ,'angular.js'
-                ,'node'
+                ,'git'
             ]
         }
         ,{
-            title: 'back-end'
+            title: 'back?'
             ,examples: [
-                 'git'
+                 'node'
                 ,'express'
                 ,'ngnix'
             ]
