@@ -90,6 +90,7 @@ body {
             color: $primary-highlight-2;
             font-size: 120%;
             margin-bottom: 10px;
+            border-bottom: 1px solid $primary-highlight-2;
         }
         & ul {
             list-style: none;
@@ -125,10 +126,9 @@ body {
                 color: $primary-highlight-2;
                 margin-left: 20px;
                 margin-bottom: 10px;
-
                 // why doesn't this work?
-                animation: myMove $transition-md linear;
-                
+                // animation: myMove $transition-md linear;
+                // transition: $transition-md;                
             }
             &.active .info-row-details {
                 display: block;
@@ -183,4 +183,20 @@ body {
         border-color: $primary-highlight;
         transition: $transition-md;
     }
+    &-icon {
+        transition: $transition-lg;
+    }
+    &:hover .nav-link-icon {
+        transition: $transition-md;
+        transform: scale(1.5) rotate(-15deg);
+        color: $primary-highlight-action;
+    }
+}
+.home-title {
+    color: $primary-highlight-2;
+    text-align: center;
+    font-size: 160%;
+    margin-top: 50px;
+    // border-bottom: 1px solid $primary-highlight-2;
+    margin-bottom: 10px;
 }

@@ -22,6 +22,11 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: '/ZACK/pages/connect.html',
             controller: ''
         })
+        .state('sourdough', {
+            url: '/sourdough',
+            templateUrl: '/ZACK/pages/sourdough.html',
+            controller: ''
+        })
         .state('travis', {
             url: '/travis',
             templateUrl: '/ZACK/pages/travis.html',
@@ -88,6 +93,14 @@ routerApp.controller('appControl', function($scope, $window){
                 ,'express'
                 ,'ngnix'
             ]
+        }
+    ];
+    $scope.helloWorld = [
+        {
+            title: 'starting sourdough'
+            ,description: 'starter and loaf observations.'
+            ,icon: 'fas fa-ghost'
+            ,state: 'sourdough'
         }
     ];
 
