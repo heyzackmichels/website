@@ -74,15 +74,6 @@ body {
     }
 }
 .about-block {
-    &-title {
-        color: $primary-highlight;
-        text-align: center;
-        &-icon {
-            font-size: 300%;
-            display: block;
-            margin-bottom: 10px;
-        }
-    }
     &-list {
         // margin-bottom: 20px;
         margin: 10px;
@@ -102,50 +93,69 @@ body {
                 font-weight: 900;
             }
         }
-        & .info-row {
-            margin-right: 20px;
-            &-title {
+    }
+}
+.info-row {
+    margin-right: 20px;
+    &-title {
+        cursor: pointer;
+        color: $primary-active;
+        border-bottom: 1px solid transparent;
+        transition: $transition-lg;
+        &:hover {
+            color: $primary-highlight-action;
+            border-color: $primary-highlight-action;
+        }
+        &:hover i {
+            color: $primary-highlight;
+        }
+        & i {
+            color: $primary-highlight-action;
+            transition: $transition-lg;
+        }
+    }
+    &-details {
+        display: none;
+        margin-bottom: 10px;
+        &-record {
+            margin-left: 20px;
+            border-bottom: 1px solid transparent;
+            color: $primary-highlight-2;
+            &.stateLink {
                 cursor: pointer;
-                color: $primary-active;
-                border-bottom: 1px solid transparent;
                 transition: $transition-lg;
-                &:hover {
-                    color: $primary-highlight-action;
-                    border-color: $primary-highlight-action;
-                }
-                &:hover i {
-                    color: $primary-highlight;
-                }
+                color: $primary-highlight-action;
                 & i {
                     color: $primary-highlight-action;
                     transition: $transition-lg;
                 }
-            }
-            &-details {
-                display: none;
-                color: $primary-highlight-2;
-                margin-left: 20px;
-                margin-bottom: 10px;
-                // why doesn't this work?
-                // animation: myMove $transition-md linear;
-                // transition: $transition-md;                
-            }
-            &.active .info-row-details {
-                display: block;
-                animation: myMove $transition-md linear;
-            }
-            &.active .info-row-title {
-                &:hover i {
-                    transform: rotate(-90deg);
+                &:hover {
+                    color: $primary-highlight;
+                    border-color: $primary-highlight;
                     transition: $transition-md;
                 }
-            }
-            &.inactive .info-row-title {
                 &:hover i {
-                    transform: rotate(90deg);
+                    // font-size: 120%;
+                    transform: rotate(-180deg);
                     transition: $transition-md;
                 }
-            }
+            }        
+        }
+    }
+    &.active .info-row-details {
+        display: block;
+        animation: myMove $transition-md linear;
+    }
+    &.active .info-row-title {
+        &:hover i {
+            transform: rotate(-90deg);
+            transition: $transition-md;
+        }
+    }
+    &.inactive .info-row-title {
+        &:hover i {
+            transform: rotate(90deg);
+            transition: $transition-md;
         }
     }
 }
@@ -197,6 +207,6 @@ body {
     text-align: center;
     font-size: 160%;
     margin-top: 50px;
-    // border-bottom: 1px solid $primary-highlight-2;
+    border-bottom: 1px solid $primary-highlight-2;
     margin-bottom: 10px;
 }

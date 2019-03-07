@@ -44,40 +44,43 @@ routerApp.controller('appControl', function($scope, $window){
         {
             title: 'crochet'
             ,examples: [
-                 'hats'
-                ,'blankets'
-                ,'amigurumi'
+                 {name: 'hats'}
+                ,{name: 'amigurumi'}
+                ,{name: 'blankets'}
             ]
         }
         ,{
              title: 'fermentation'
             ,examples: [
-                 'beer'
-                ,'sourdough'
-                ,'sourkraut'
-                ,'kimchi'
+                 {name: 'beer'}
+                ,{  
+                    name: 'sourdough'
+                    ,state: 'sourdough'
+                }
+                ,{name: 'sourkraut'}
+                ,{name: 'kimchi'}
             ]
         }
         ,{
             title: 'raspberry pi'
             ,examples: [
-                 'arcade'
-                ,'guitar pedal'
-                ,'wireless display'
+                 {name: 'arcade'}
+                ,{name: 'guitar pedal'}
+                ,{name: 'wireless display'}
             ]
         }
         ,{
              title: 'stringed instruments'
             ,examples: [
-                 'ukulele'
-                ,'mandolin'
-                ,'guitar'
+                 {name: 'ukulele'}
+                ,{name: 'mandolin'}
+                ,{name: 'guitar'}
             ]
         }
     ];
     $scope.siteParts = [
         {
-            title: 'front?'
+            title: 'front'
             ,examples: [
                  'scss'
                 ,'purecss'
@@ -87,7 +90,7 @@ routerApp.controller('appControl', function($scope, $window){
             ]
         }
         ,{
-            title: 'back?'
+            title: 'back'
             ,examples: [
                  'node'
                 ,'express'

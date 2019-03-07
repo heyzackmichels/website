@@ -48,14 +48,6 @@ body {
     font-size: 120%;
     color: #585858; }
 
-.about-block-title {
-  color: #2c6090;
-  text-align: center; }
-  .about-block-title-icon {
-    font-size: 300%;
-    display: block;
-    margin-bottom: 10px; }
-
 .about-block-list {
   margin: 10px; }
   .about-block-list-title {
@@ -71,35 +63,52 @@ body {
       color: #2c6090;
       margin-right: 10px;
       font-weight: 900; }
-  .about-block-list .info-row {
-    margin-right: 20px; }
-    .about-block-list .info-row-title {
-      cursor: pointer;
-      color: #585858;
-      border-bottom: 1px solid transparent;
+
+.info-row {
+  margin-right: 20px; }
+  .info-row-title {
+    cursor: pointer;
+    color: #585858;
+    border-bottom: 1px solid transparent;
+    transition: 1s; }
+    .info-row-title:hover {
+      color: #02b9b6;
+      border-color: #02b9b6; }
+    .info-row-title:hover i {
+      color: #2c6090; }
+    .info-row-title i {
+      color: #02b9b6;
       transition: 1s; }
-      .about-block-list .info-row-title:hover {
-        color: #02b9b6;
-        border-color: #02b9b6; }
-      .about-block-list .info-row-title:hover i {
-        color: #2c6090; }
-      .about-block-list .info-row-title i {
-        color: #02b9b6;
-        transition: 1s; }
-    .about-block-list .info-row-details {
-      display: none;
-      color: #537492;
+  .info-row-details {
+    display: none;
+    margin-bottom: 10px; }
+    .info-row-details-record {
       margin-left: 20px;
-      margin-bottom: 10px; }
-    .about-block-list .info-row.active .info-row-details {
-      display: block;
-      animation: myMove 0.25s linear; }
-    .about-block-list .info-row.active .info-row-title:hover i {
-      transform: rotate(-90deg);
-      transition: 0.25s; }
-    .about-block-list .info-row.inactive .info-row-title:hover i {
-      transform: rotate(90deg);
-      transition: 0.25s; }
+      border-bottom: 1px solid transparent;
+      color: #537492; }
+      .info-row-details-record.stateLink {
+        cursor: pointer;
+        transition: 1s;
+        color: #02b9b6; }
+        .info-row-details-record.stateLink i {
+          color: #02b9b6;
+          transition: 1s; }
+        .info-row-details-record.stateLink:hover {
+          color: #2c6090;
+          border-color: #2c6090;
+          transition: 0.25s; }
+        .info-row-details-record.stateLink:hover i {
+          transform: rotate(-180deg);
+          transition: 0.25s; }
+  .info-row.active .info-row-details {
+    display: block;
+    animation: myMove 0.25s linear; }
+  .info-row.active .info-row-title:hover i {
+    transform: rotate(-90deg);
+    transition: 0.25s; }
+  .info-row.inactive .info-row-title:hover i {
+    transform: rotate(90deg);
+    transition: 0.25s; }
 
 .connect-block-target {
   color: #02b9b6;
@@ -140,4 +149,5 @@ body {
   text-align: center;
   font-size: 160%;
   margin-top: 50px;
+  border-bottom: 1px solid #537492;
   margin-bottom: 10px; }
