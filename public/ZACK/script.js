@@ -22,6 +22,11 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: '/ZACK/pages/connect.html',
             controller: ''
         })
+        .state('sourdough', {
+            url: '/sourdough',
+            templateUrl: '/ZACK/pages/sourdough.html',
+            controller: ''
+        })
         .state('travis', {
             url: '/travis',
             templateUrl: '/ZACK/pages/travis.html',
@@ -39,40 +44,44 @@ routerApp.controller('appControl', function($scope, $window){
         {
             title: 'crochet'
             ,examples: [
-                 'hats'
-                ,'blankets'
-                ,'amigurumi'
+                 {name: 'hats'}
+                ,{name: 'amigurumi'}
+                ,{name: 'odds & ends'}
             ]
         }
         ,{
              title: 'fermentation'
             ,examples: [
-                 'beer'
-                ,'sourdough'
-                ,'sourkraut'
-                ,'kimchi'
+                 {name: 'beer'}
+                ,{  
+                    name: 'sourdough'
+                    ,state: 'sourdough'
+                }
+                ,{name: 'sourkraut'}
+                ,{name: 'kimchi'}
             ]
         }
         ,{
             title: 'raspberry pi'
             ,examples: [
-                 'arcade'
-                ,'guitar pedal'
-                ,'wireless display'
+                 {name: 'arcade'}
+                ,{name: 'guitar pedal'}
+                ,{name: 'wireless display'}
             ]
         }
         ,{
              title: 'stringed instruments'
             ,examples: [
-                 'ukulele'
-                ,'mandolin'
-                ,'guitar'
+                 {name: 'ukulele'}
+                ,{name: 'mandolin'}
+                ,{name: 'guitar'}
             ]
         }
     ];
+
     $scope.siteParts = [
         {
-            title: 'front?'
+            title: 'front'
             ,examples: [
                  'scss'
                 ,'purecss'
@@ -82,13 +91,75 @@ routerApp.controller('appControl', function($scope, $window){
             ]
         }
         ,{
-            title: 'back?'
+            title: 'back'
             ,examples: [
                  'node'
                 ,'express'
-                ,'ngnix'
+                ,'nginx'
             ]
         }
     ];
+
+    $scope.helloWorld = [
+        {
+            title: 'starting sourdough'
+            ,description: 'starter and loaf observations.'
+            ,icon: 'fas fa-ghost'
+            ,state: 'sourdough'
+        }
+    ];
+
+    $scope.sourdough_loaf = {
+        theComponents: [
+            {
+                name: 'flour'
+                ,grams: 400
+            }
+            ,{
+                name: 'water'
+                ,grams: 230
+            }
+            ,{
+                name: 'starter'
+                ,grams: 160
+            }
+            ,{
+                name: 'salt'
+                ,grams: 5
+            }
+        ]
+        ,theProcess: [
+            {
+                name: 'mix components'
+            }
+            ,{
+                name: 'kneed until silky/smooth/elastic'
+            }
+            ,{
+                name: 'proof in bowl 3 hours'
+            }
+            ,{
+                name: 'knock down, drag edges to make sphere'
+            }
+            ,{
+                name: 'proof in basket 3+ hours (or fridge overnight)'
+            }
+            ,{
+                name: 'oven 450 degrees fahrenheit'
+            }
+            ,{
+                name: 'flip into baking vessel (dutch oven)'
+            }
+            ,{
+                name: 'score top'
+            }
+            ,{
+                name: '25 minutes with lid'
+            }
+            ,{
+                name: '25 minutes without lid'
+            }
+        ]
+    };
 
 }); //closes routerApp.controller

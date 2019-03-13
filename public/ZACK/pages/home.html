@@ -13,3 +13,17 @@
         </div>
     </div>
 </div>
+<div class="pure-g">
+    <div class="pure-u-1">
+        <div class="home-title">
+            <i class="fas fa-air-freshener"></i>
+            &nbsp;random
+        </div>
+    </div>
+    <div class="pure-u-1" ng-repeat="fresh in helloWorld">
+        <div class="nav-link" ui-sref="{{fresh.state}}" title="{{fresh.description}}">
+            <i class="{{fresh.icon}} nav-link-icon"></i>
+            &nbsp;{{fresh.title}}
+        </div>
+    </div>
+</div>
