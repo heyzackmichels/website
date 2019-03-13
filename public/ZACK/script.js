@@ -46,7 +46,7 @@ routerApp.controller('appControl', function($scope, $window){
             ,examples: [
                  {name: 'hats'}
                 ,{name: 'amigurumi'}
-                ,{name: 'blankets'}
+                ,{name: 'odds & ends'}
             ]
         }
         ,{
@@ -78,6 +78,7 @@ routerApp.controller('appControl', function($scope, $window){
             ]
         }
     ];
+
     $scope.siteParts = [
         {
             title: 'front'
@@ -94,10 +95,11 @@ routerApp.controller('appControl', function($scope, $window){
             ,examples: [
                  'node'
                 ,'express'
-                ,'ngnix'
+                ,'nginx'
             ]
         }
     ];
+
     $scope.helloWorld = [
         {
             title: 'starting sourdough'
@@ -106,5 +108,58 @@ routerApp.controller('appControl', function($scope, $window){
             ,state: 'sourdough'
         }
     ];
+
+    $scope.sourdough_loaf = {
+        theComponents: [
+            {
+                name: 'flour'
+                ,grams: 400
+            }
+            ,{
+                name: 'water'
+                ,grams: 230
+            }
+            ,{
+                name: 'starter'
+                ,grams: 160
+            }
+            ,{
+                name: 'salt'
+                ,grams: 5
+            }
+        ]
+        ,theProcess: [
+            {
+                name: 'mix components'
+            }
+            ,{
+                name: 'kneed until silky/smooth/elastic'
+            }
+            ,{
+                name: 'proof in bowl 3 hours'
+            }
+            ,{
+                name: 'knock down, drag edges to make sphere'
+            }
+            ,{
+                name: 'proof in basket 3+ hours (or fridge overnight)'
+            }
+            ,{
+                name: 'oven 450 degrees fahrenheit'
+            }
+            ,{
+                name: 'flip into baking vessel (dutch oven)'
+            }
+            ,{
+                name: 'score top'
+            }
+            ,{
+                name: '25 minutes with lid'
+            }
+            ,{
+                name: '25 minutes without lid'
+            }
+        ]
+    };
 
 }); //closes routerApp.controller

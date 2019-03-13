@@ -50,8 +50,8 @@
                         <div class="info-row-details">
                             <div ng-repeat="example in activity.examples"
                                 class="info-row-details-record"    
-                                ng-class="example.state ? 'stateLink' : 'no'"
-                                ui-sref="{{example.state}}">
+                                ng-class="example.state ? 'stateLink' : ''"
+                                ui-sref="{{example.state ? example.state : 'about'}}">
                                 <i class="fas fa-caret-right"></i>
                                 &nbsp;{{example.name}}
                             </div>
