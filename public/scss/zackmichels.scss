@@ -38,6 +38,7 @@ body {
     line-height: 1.42857143;
     color: $primary;
     background-color: $primary-passive;
+    counter-reset: myList;
 }
 // pure css add-on's
 .zack-menu {
@@ -91,6 +92,25 @@ body {
                 color: $primary-highlight;
                 margin-right: 10px;
                 font-weight: 900;
+            }
+        }
+        & ol {
+            list-style: none;
+            margin: 0;
+            padding-left: 37px;
+            & li:before {
+                content: counter(myList);
+                counter-increment: myList;
+                color: $primary-passive;
+                background-color: $primary-highlight-2;
+                margin-right: 5px;
+                font-weight: bold;
+                width: 15px;
+                height: 15px;
+                border-radius: 10px;
+                display: inline-block;
+                text-align: center;
+                font-size: 80%;
             }
         }
     }
