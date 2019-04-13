@@ -27,6 +27,11 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: '/ZACK/pages/sourdough.html',
             controller: ''
         })
+        .state('svg', {
+            url: '/svg',
+            templateUrl: '/ZACK/pages/svg.html',
+            controller: ''
+        })
         .state('travis', {
             url: '/travis',
             templateUrl: '/ZACK/pages/travis.html',
@@ -106,6 +111,31 @@ routerApp.controller('appControl', function($scope, $window){
             ,description: 'starter and loaf observations.'
             ,icon: 'fas fa-ghost'
             ,state: 'sourdough'
+        }
+        ,{
+            title: '<svg>'
+            ,description: 'svg'
+            ,icon: 'fas fa-paint-brush'
+            ,state: 'svg'
+        }
+    ];
+
+    $scope.activeSVG = false;
+    $scope.toggleSVG = function() {
+        this.activeSVG = !this.activeSVG;
+    };
+    $scope.svgs = [
+        {
+            class: "svg-moon"
+            ,viewBox: "0 151.2 612 488.977"
+        }
+        ,{
+            class: "svg-ice-cream"
+            ,viewBox: "43.714 45.685 524.572 700.045"
+        }
+        ,{
+            class: "svg-door"
+            ,viewBox: "0 151.201 612 489.599"
         }
     ];
 
