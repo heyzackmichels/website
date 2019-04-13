@@ -121,7 +121,7 @@ routerApp.controller('appControl', function($scope, $window){
     ];
 
     $scope.activeSVG = false;
-    $scope.toggleSVG = function() {
+    $scope.toggleSVG = function(name) {
         this.activeSVG = !this.activeSVG;
     };
     $scope.svgs = [

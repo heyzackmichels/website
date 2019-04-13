@@ -1,13 +1,14 @@
 <div class="pure-g">
     <div class="pure-u-1">
-        <div style="text-align:center;color:#ff7700;font-size:200%;">
-            <i class="fas fa-wrench" title="just for fun"></i>
+        <div class="slide-thing">
+            <i class="fas fa-arrow-down"></i>
         </div>
     </div>        
     <div class="pure-u-1">
         <div class="svgContainer">
             <svg xmlns="http://www.w3.org/2000/svg"
                 ng-repeat="svg in svgs"
+                ng-if="svg"
                 viewBox="{{svg.viewBox}}"
                 ng-click="toggleSVG();"
                 ng-class="{'active': activeSVG }"
@@ -17,8 +18,3 @@
         </div>
     </div>
 </div>
-
-
-
-
-
