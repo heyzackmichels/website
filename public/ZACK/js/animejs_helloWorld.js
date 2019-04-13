@@ -1,14 +1,17 @@
 jQuery(document).ready(function($){
 
-    anime({
-        targets: 'div.svgContainer svg',
-        translateY: [
-            { value: 5, duration: 3000},
-            { value: 0, duration: 3000},
-        ],
-        loop: true,
-        delay: function(el, i) { return i * 1000; }
-    });
+    setTimeout( function() {
+            anime({
+                targets: 'div.svgContainer svg',
+                translateY: [
+                    { value: 5, duration: 3000},
+                    { value: 0, duration: 3000},
+                ],
+                loop: true,
+                delay: function(el, i) { return i * 1000; }
+            });
+        }, 3000);
+
 
     // var animation = anime({
     //     targets: 'div.slide-thing i',
