@@ -7,9 +7,9 @@
     "scss": "node-sass --watch public/scss -o public/css/scss_output"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.4.1",
+    "@fortawesome/fontawesome-free": "^5.8.1",
     "body-parser": "~1.15.2",
-    "cookie-parser": "~1.4.3",
+    "cookie-parser": "^1.4.4",
     "debug": "~2.2.0",
     "express": "~4.14.0",
     "jade": "~1.11.0",
