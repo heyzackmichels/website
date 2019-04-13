@@ -341,7 +341,7 @@ c0-16.897,10.28-30.6,22.95-30.6c12.67,0,22.95,13.703,22.95,30.6C305.7,412.896,29
 }
 
 .slide-thing {
-    color:#ff7700;
+    color:#e6e6e6;
     font-size:200%;
     display: table;
     margin: auto;
@@ -350,9 +350,9 @@ c0-16.897,10.28-30.6,22.95-30.6c12.67,0,22.95,13.703,22.95,30.6C305.7,412.896,29
     display: table;
     margin: auto;
     cursor: pointer;
-    color: #ff7700;
+    color: #e6e6e6;
     transition: $transition-md;
     &:hover {
-        color: #02b9b6;
+        color: #b9b9b9;
     }
 }
