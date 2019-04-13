@@ -120,8 +120,13 @@ routerApp.controller('appControl', function($scope, $window){
         }
     ];
 
+    $scope.activeAnimation = false;
+    $scope.toggleAnimation = function() {
+        $scope.activeAnimation = !$scope.activeAnimation;
+    };
+
     $scope.activeSVG = false;
-    $scope.toggleSVG = function(name) {
+    $scope.toggleSVG = function() {
         this.activeSVG = !this.activeSVG;
     };
     $scope.svgs = [
