@@ -3,7 +3,17 @@
         <div class="slide-thing">
             <i class="fas fa-arrow-down"></i>
         </div>
-    </div>        
+    </div>
+    <div class="pure-u-1">
+        <div class="slide-playPause">
+            <i class="fas fa-play-circle"
+                ng-show="activeAnimation"
+                ng-click="toggleAnimation();"></i>
+            <i class="fas fa-pause-circle"
+                ng-hide="activeAnimation"
+                ng-click="toggleAnimation();"></i>
+        </div>
+    </div>
     <div class="pure-u-1">
         <div class="svgContainer">
             <svg xmlns="http://www.w3.org/2000/svg"
