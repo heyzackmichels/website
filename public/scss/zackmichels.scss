@@ -284,7 +284,7 @@ c0-16.897,10.28-30.6,22.95-30.6c12.67,0,22.95,13.703,22.95,30.6C305.7,412.896,29
     position: relative;
     float:left;
     margin: 50px;
-    height: 300px;
+    height: 100px;
     cursor: pointer;
     & path {
         transition: $transition-lg;
@@ -334,4 +334,10 @@ c0-16.897,10.28-30.6,22.95-30.6c12.67,0,22.95,13.703,22.95,30.6C305.7,412.896,29
         fill: #F44336;
         d: $svg-door-open;
     }
+}
+
+.slide-thing {
+    text-align:center;
+    color:#ff7700;
+    font-size:200%;
 }
