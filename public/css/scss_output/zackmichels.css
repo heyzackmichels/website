@@ -226,8 +226,7 @@ body {
   color: #ff7700;
   font-size: 200%;
   display: table;
-  margin: auto;
-  width: 500px; }
+  margin: auto; }
 
 .slide-playPause {
   display: table;
