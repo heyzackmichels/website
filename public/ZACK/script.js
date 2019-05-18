@@ -58,6 +58,7 @@ routerApp.controller('appControl', function($scope, $window){
              title: 'fermentation'
             ,examples: [
                  {name: 'beer'}
+                ,{name: 'hot sauce'}
                 ,{  
                     name: 'sourdough'
                     ,state: 'sourdough'
@@ -112,12 +113,12 @@ routerApp.controller('appControl', function($scope, $window){
             ,icon: 'fas fa-ghost'
             ,state: 'sourdough'
         }
-        ,{
-            title: '<svg>'
-            ,description: 'svg'
-            ,icon: 'fas fa-paint-brush'
-            ,state: 'svg'
-        }
+        // ,{
+        //     title: '<svg>'
+        //     ,description: 'svg'
+        //     ,icon: 'fas fa-paint-brush'
+        //     ,state: 'svg'
+        // }
     ];
 
     $scope.activeAnimation = false;
