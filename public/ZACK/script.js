@@ -32,6 +32,11 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: '/ZACK/pages/svg.html',
             controller: ''
         })
+        .state('hotsauce', {
+            url: '/hotsauce',
+            templateUrl: '/ZACK/pages/hotsauce.html',
+            controller: ''
+        })
         .state('travis', {
             url: '/travis',
             templateUrl: '/ZACK/pages/travis.html',
@@ -58,6 +63,10 @@ routerApp.controller('appControl', function($scope, $window){
              title: 'fermentation'
             ,examples: [
                  {name: 'beer'}
+                ,{
+                    name: 'hot sauce'
+                    ,state: 'hotsauce'
+                }
                 ,{  
                     name: 'sourdough'
                     ,state: 'sourdough'
@@ -112,11 +121,17 @@ routerApp.controller('appControl', function($scope, $window){
             ,icon: 'fas fa-ghost'
             ,state: 'sourdough'
         }
+        // ,{
+        //     title: '<svg>'
+        //     ,description: 'svg'
+        //     ,icon: 'fas fa-paint-brush'
+        //     ,state: 'svg'
+        // }
         ,{
-            title: '<svg>'
-            ,description: 'svg'
-            ,icon: 'fas fa-paint-brush'
-            ,state: 'svg'
+            title: 'hot sauce'
+            ,description: 'hot sauce'
+            ,icon: 'fas fa-pepper-hot'
+            ,state: 'hotsauce'
         }
     ];
 
