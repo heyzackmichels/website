@@ -225,11 +225,11 @@ body {
 .slide-thing {
   color: #e6e6e6;
   font-size: 200%;
-  display: table;
+  display: none;
   margin: auto; }
 
 .slide-playPause {
-  display: table;
+  display: none;
   margin: auto;
   cursor: pointer;
   color: #e6e6e6;
@@ -253,7 +253,7 @@ svg.polygon {
   bottom: 0;
   left: 0;
   z-index: -1;
-  opacity: .05; }
+  opacity: .1; }
   .backgroundSVG svg {
     height: 100%;
     display: table;
