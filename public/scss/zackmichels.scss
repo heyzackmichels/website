@@ -305,11 +305,13 @@ $svg-door-closed: path("M596.699,579.6h-76.5V259.687c0-26.067-20.588-47.287-45.9
 .slide-thing {
     color:#e6e6e6;
     font-size:200%;
-    display: table;
+    // display: table;
+    display: none;
     margin: auto;
 }
 .slide-playPause {
-    display: table;
+    // display: table;
+    display: none;
     margin: auto;
     cursor: pointer;
     color: #e6e6e6;
