@@ -72,7 +72,8 @@ body {
   .about-block-list ol {
     list-style: none;
     margin: 0;
-    padding-left: 37px; }
+    padding-left: 37px;
+    counter-reset: myList; }
     .about-block-list ol > li:before {
       content: counter(myList);
       counter-increment: myList;
@@ -93,9 +94,6 @@ body {
     font-size: 90%;
     border-top: 1px solid #ebebeb;
     width: 100%; }
-  .about-block-list.nested ol > li:before {
-    content: counter(myList2) !important;
-    counter-increment: myList2 !important; }
   .about-block-list.nested ol li li {
     font-size: 90%; }
 
