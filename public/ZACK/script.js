@@ -212,6 +212,60 @@ routerApp.controller('appControl', function($scope, $window){
                 name: '25 minutes without lid'
             }
         ]
+        ,theStarter: [
+            {
+                step: 'combine equal parts flour and water'
+                ,description: 'fill a pint jar halfway and cover with a cloth & rubberband'
+                ,list: []
+            }
+            ,{
+                step: 'let sit in warm spot for 3-4 days'
+                ,description: 'top of the fridge?'
+                ,list: []
+            }
+            ,{
+                step: 'feed twice a day for next 3 days'
+                ,description: 'get used to discarding the starter you dont need. later you can bake with it (perfect amount to make a loaf!)'
+                ,list: [
+                    {
+                        name: 'flour'
+                        ,extra: 100
+                    }
+                    ,{
+                        name: 'water'
+                        ,extra: 100
+                    }
+                    ,{
+                        name: 'starter'
+                        ,extra: 75
+                    }
+                ]
+            }
+            ,{
+                step: 'ready!'
+                ,description: 'start baking, feed daily, or retire it to the refrigerator.'
+                ,list: []
+            }
+            ,{
+                step: 'toss in fridge / feed whenever'
+                ,description: 'this slows fermentation so you only need to feed before baking or every month, etc. let it reach room temperature before feeding.'
+                ,list: [
+                    {
+                        name: 'flour'
+                        ,extra: 100
+                    }
+                    ,{
+                        name: 'water'
+                        ,extra: 100
+                    }
+                    ,{
+                        name: 'starter'
+                        ,extra: 75
+                    }
+                ]
+            }
+        ]
+
     };
 
 }); //closes routerApp.controller
