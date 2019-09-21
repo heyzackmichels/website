@@ -103,6 +103,7 @@ body {
             list-style: none;
             margin: 0;
             padding-left: 37px;
+            counter-reset: myList;
             > li:before {
                 content: counter(myList);
                 counter-increment: myList;
@@ -128,10 +129,10 @@ body {
                 width: 100%;
             }
             & ol {
-                > li:before {
-                    content: counter(myList2) !important;
-                    counter-increment: myList2 !important;
-                }
+                // > li:before {
+                //     counter-increment: myListTwo !important;
+                //     content: counter(myListTwo) !important;
+                // }
                 & li li {
                     font-size: 90%;
                 }
