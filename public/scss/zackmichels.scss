@@ -75,6 +75,11 @@ body {
     }
 }
 .about-block {
+    & .header {
+        text-align: center;
+        color: #888;
+        font-size: 120%;
+    }
     &-list {
         // margin-bottom: 20px;
         margin: 10px;
@@ -87,7 +92,7 @@ body {
         & ul {
             list-style: none;
             margin: 0;
-            & li:before {
+            > li:before {
                 content: "•";
                 color: $primary-highlight;
                 margin-right: 10px;
@@ -98,7 +103,7 @@ body {
             list-style: none;
             margin: 0;
             padding-left: 37px;
-            & li:before {
+            > li:before {
                 content: counter(myList);
                 counter-increment: myList;
                 color: $primary-passive;
@@ -111,6 +116,25 @@ body {
                 display: inline-block;
                 text-align: center;
                 font-size: 80%;
+            }
+        }
+        &.nested {
+            & .description {
+                color: #888;
+                display: inline-block;
+                padding-left: 25px;
+                font-size: 90%;
+                border-top: 1px solid #ebebeb;
+                width: 100%;
+            }
+            & ol {
+                > li:before {
+                    content: counter(myList2) !important;
+                    counter-increment: myList2 !important;
+                }
+                & li li {
+                    font-size: 90%;
+                }
             }
         }
     }
