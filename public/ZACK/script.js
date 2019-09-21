@@ -117,7 +117,7 @@ routerApp.controller('appControl', function($scope, $window){
     $scope.helloWorld = [
         {
             title: 'starting sourdough'
-            ,description: 'starter and loaf observations.'
+            ,description: 'starter and bread observations.'
             ,icon: 'fas fa-ghost'
             ,state: 'sourdough'
         }
@@ -127,12 +127,12 @@ routerApp.controller('appControl', function($scope, $window){
         //     ,icon: 'fas fa-paint-brush'
         //     ,state: 'svg'
         // }
-        ,{
-            title: 'hot sauce'
-            ,description: 'hot sauce'
-            ,icon: 'fas fa-pepper-hot'
-            ,state: 'hotsauce'
-        }
+        // ,{
+        //     title: 'hot sauce'
+        //     ,description: 'hot sauce'
+        //     ,icon: 'fas fa-pepper-hot'
+        //     ,state: 'hotsauce'
+        // }
     ];
 
     $scope.activeAnimation = false;
@@ -214,18 +214,18 @@ routerApp.controller('appControl', function($scope, $window){
         ]
         ,theStarter: [
             {
-                step: 'combine equal parts flour and water'
-                ,description: 'fill a pint jar halfway and cover with a cloth & rubberband'
+                step: 'combine equal parts flour & water'
+                ,description: 'fill pint jar halfway, cover with cloth & rubberband.'
                 ,list: []
             }
             ,{
-                step: 'let sit in warm spot for 3-4 days'
-                ,description: 'top of the fridge?'
+                step: 'let sit in warm spot 3-5 days (until active)'
+                ,description: 'top of the fridge? it will start to bubble when active.'
                 ,list: []
             }
             ,{
                 step: 'feed twice a day for next 3 days'
-                ,description: 'get used to discarding the starter you dont need. later you can bake with it (perfect amount to make a loaf!)'
+                ,description: 'you want it to consistently respond to feeding. discard starter not used. later you can bake with it (perfect amount to make bread!)'
                 ,list: [
                     {
                         name: 'flour'
@@ -243,12 +243,12 @@ routerApp.controller('appControl', function($scope, $window){
             }
             ,{
                 step: 'ready!'
-                ,description: 'start baking, feed daily, or retire it to the refrigerator.'
+                ,description: 'start baking & feed daily OR retire to refrigerator.'
                 ,list: []
             }
             ,{
-                step: 'toss in fridge / feed whenever'
-                ,description: 'this slows fermentation so you only need to feed before baking or every month, etc. let it reach room temperature before feeding.'
+                step: 'toss in fridge & feed whenever'
+                ,description: 'this slows fermentation. you only need to feed before baking or every month, etc. let it reach room temperature before feeding.'
                 ,list: [
                     {
                         name: 'flour'
@@ -265,7 +265,26 @@ routerApp.controller('appControl', function($scope, $window){
                 ]
             }
         ]
+    };
 
+    $scope.hot_sauce = {
+        theEquipment: [
+            {
+                name: 'mason jar'
+            }
+            ,{
+                name: 'little weight'
+            }
+            ,{
+                name: 'plastic wrap & rubberband'
+            }
+            ,{
+                name: 'blender'
+            }
+            ,{
+                name: 'jar /  bottle'
+            }
+        ]
     };
 
 }); //closes routerApp.controller
