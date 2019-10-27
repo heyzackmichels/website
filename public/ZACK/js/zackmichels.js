@@ -8,6 +8,11 @@ function linkedin() {
     window.location.href = 'https://www.linkedin.com/in/zackmichels'
 };
 
+// redirect to instagram page
+function instagram() {
+    window.location.href = 'https://www.instagram.com/slingshot_engage'
+};
+
 // google analytics
 (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
