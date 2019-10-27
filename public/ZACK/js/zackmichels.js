@@ -13,6 +13,11 @@ function instagram() {
     window.location.href = 'https://www.instagram.com/slingshot_engage'
 };
 
+// redirect to steam page
+function steam() {
+    window.location.href = 'https://steamcommunity.com/profiles/76561198140848071'
+};
+
 // google analytics
 (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
