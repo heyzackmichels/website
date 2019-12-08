@@ -74,6 +74,20 @@ body {
         color: $primary-active;
     }
 }
+.about {
+    .profile {
+        &-pic img {
+        max-width: 100px;
+        max-height: 100px;
+        }
+        // &-name {
+        //     font-size: 200%
+        // }
+        // &-title {
+        //     font-size: 120%;
+        // }
+    }
+}
 .about-block {
     & .header {
         text-align: center;
