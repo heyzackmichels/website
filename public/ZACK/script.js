@@ -62,15 +62,15 @@ routerApp.controller('appControl', function($scope, $window){
         ,{
              title: 'fermentation'
             ,examples: [
-                 {name: 'beer'}
+                {  
+                    name: 'sourdough'
+                    ,state: 'sourdough'
+                }
                 ,{
                     name: 'hot sauce'
                     ,state: 'hotsauce'
                 }
-                ,{  
-                    name: 'sourdough'
-                    ,state: 'sourdough'
-                }
+                ,{name: 'beer'}
                 ,{name: 'sourkraut'}
                 ,{name: 'kimchi'}
             ]

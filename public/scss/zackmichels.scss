@@ -87,6 +87,9 @@ body {
         //     font-size: 120%;
         // }
     }
+    .nav-link {
+        font-size: 160%;
+    }
 }
 .about-block {
     & .header {
@@ -179,7 +182,8 @@ body {
         &-record {
             margin-left: 20px;
             border-bottom: 1px solid transparent;
-            color: $primary-highlight-2;
+            // color: $primary-highlight-2;
+            color: $primary-active;
             &.stateLink {
                 cursor: pointer;
                 transition: $transition-lg;
