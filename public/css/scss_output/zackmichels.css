@@ -49,6 +49,10 @@ body {
     font-size: 120%;
     color: #585858; }
 
+.about .profile-pic img {
+  max-width: 100px;
+  max-height: 100px; }
+
 .about-block .header {
   text-align: center;
   color: #888;
