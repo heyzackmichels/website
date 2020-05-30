@@ -97,19 +97,19 @@ routerApp.controller('appControl', function($scope, $window){
         {
             title: 'front'
             ,examples: [
-                 'scss'
-                ,'purecss'
+                 'angular.js'
                 ,'fontawesome'
-                ,'angular.js'
                 ,'git'
+                ,'purecss'
+                ,'scss'
             ]
         }
         ,{
             title: 'back'
             ,examples: [
-                 'node'
-                ,'express'
+                 'express'
                 ,'nginx'
+                ,'node'
             ]
         }
     ];
