@@ -18,6 +18,11 @@ function steam() {
     window.location.href = 'https://steamcommunity.com/profiles/76561198140848071'
 };
 
+// redirect to github page
+function github() {
+    window.location.href = 'https://github.com/heyzackmichels/'
+};
+
 // google analytics
 (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;

@@ -15,7 +15,7 @@ Node and install.
 Grab directory.
 
 ```
-git clone https://zackatvt@bitbucket.org/zackatvt/scsszack.git
+git clone https://github.com/heyzackmichels/website.git
 ```
 
 At root, install dependencies.
