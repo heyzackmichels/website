@@ -23,13 +23,13 @@ npm install
 
 ## Deployment
 
-**1.** Start app.
+**1.** At root, start app.
 
 ```
 npm start
 ```
 
-**2.** Go to [localhost:3000](http://localhost:3000).
+**2.** In browser, go to [localhost:3000](http://localhost:3000).
 
 ## Built Using
 
