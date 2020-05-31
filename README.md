@@ -3,7 +3,7 @@
 A website!
 
 
-### Prerequisites
+#### Prerequisites
 
 * [Node.js](https://nodejs.org/en/download/) - open source server environment
 
@@ -23,13 +23,22 @@ npm install
 
 ## Deployment
 
-**1.** Start app.
+**1.** At root, start app.
 
 ```
 npm start
 ```
 
-**2.** Go to [localhost:3000](http://localhost:3000).
+**2.** In browser, go to [localhost:3000](http://localhost:3000).
+
+
+## Tools
+
+**1.** Start scss compiler that watches [/public/scss](https://github.com/heyzackmichels/website/tree/master/public/scss).
+
+```
+npm run scss
+```
 
 ## Built Using
 
