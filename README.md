@@ -10,15 +10,15 @@ Node and install.
 
 * [Node.js](https://nodejs.org/en/download/) - open source server environment
 
-### Installing
+## Installing
 
-Grab directory.
+1. Grab directory.
 
 ```
 git clone https://github.com/heyzackmichels/website.git
 ```
 
-At root, install dependencies.
+2. At root, install dependencies.
 
 ```
 npm install
@@ -26,13 +26,13 @@ npm install
 
 ## Deployment
 
-Start app.
+3. Start app.
 
 ```
 npm start
 ```
 
-Go to [localhost:3000](http://localhost:3000).
+4. Go to [localhost:3000](http://localhost:3000).
 
 ## Built Using
 
