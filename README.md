@@ -2,9 +2,6 @@
 
 A website!
 
-## Getting Started
-
-Node and install.
 
 ### Prerequisites
 
@@ -26,13 +23,13 @@ npm install
 
 ## Deployment
 
-3. Start app.
+1. Start app.
 
 ```
 npm start
 ```
 
-4. Go to [localhost:3000](http://localhost:3000).
+2. Go to [localhost:3000](http://localhost:3000).
 
 ## Built Using
 
