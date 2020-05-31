@@ -247,11 +247,11 @@ body {
 .slide-thing {
   color: #e6e6e6;
   font-size: 200%;
-  display: none;
+  display: table;
   margin: auto; }
 
 .slide-playPause {
-  display: none;
+  display: table;
   margin: auto;
   cursor: pointer;
   color: #e6e6e6;

@@ -1,4 +1,12 @@
 <div class="pure-g">
+    <div class="pure-u-1 about-block">
+        <div class="about-block">
+            <div class="header">
+                <i class="fas fa-paint-brush"></i>
+                &nbsp;&#60;svg&#62;&nbsp;+&nbsp;css&nbsp;+&nbsp;<a href="https://animejs.com/" title="JavaScript animation engine">animejs</a>
+            </div>
+        </div>
+    </div>
     <div class="pure-u-1">
         <div class="svgContainer">
             <svg xmlns="http://www.w3.org/2000/svg"
@@ -18,16 +26,10 @@
         </div>
     </div>
     <div class="pure-u-1">
-        <div class="slide-playPause">
-            <!-- <i class="fas"
-                ng-class="activeAnimation ? 'fa-play-circle':'fa-pause-circle'"
-                ng-click="toggleAnimation();"></i> -->
-            <i class="fas fa-play-circle"
-                ng-show="activeAnimation"
-                ng-click="toggleAnimation();"></i>
-            <i class="fas fa-pause-circle"
-                ng-hide="activeAnimation"
-                ng-click="toggleAnimation();"></i>
+        <div class="slide-playPause" ng-click="toggleAnimation();">
+            <!-- <i class="fas" ng-class="activeAnimation ? 'fa-play-circle':'fa-pause-circle'"></i> -->
+            <i class="fas fa-play-circle" ng-show="activeAnimation"></i>
+            <i class="fas fa-pause-circle" ng-hide="activeAnimation"></i>
         </div>
     </div>
 

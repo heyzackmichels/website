@@ -123,7 +123,7 @@ routerApp.controller('appControl', function($scope, $window){
         }
         ,{
             title: '<svg>'
-            ,description: 'little css fun'
+            ,description: 'svg, css, js, etc.'
             ,icon: 'fas fa-paint-brush'
             ,state: 'svg'
         }
@@ -141,7 +141,7 @@ routerApp.controller('appControl', function($scope, $window){
     };
 
     $scope.activeSVG = false;
-    $scope.displaySVG = '';
+    $scope.displaySVG = 'svg-moon';
     $scope.toggleSVG = function(name) {
         this.activeSVG = !this.activeSVG;
         $scope.displaySVG = name;
