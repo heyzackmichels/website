@@ -117,22 +117,22 @@ routerApp.controller('appControl', function($scope, $window){
     $scope.helloWorld = [
         {
             title: 'starting sourdough'
-            ,description: 'starter and bread observations.'
+            ,description: 'starter and bread observations'
             ,icon: 'fas fa-ghost'
             ,state: 'sourdough'
         }
-        // ,{
-        //     title: '<svg>'
-        //     ,description: 'svg'
-        //     ,icon: 'fas fa-paint-brush'
-        //     ,state: 'svg'
-        // }
-        // ,{
-        //     title: 'hot sauce'
-        //     ,description: 'hot sauce'
-        //     ,icon: 'fas fa-pepper-hot'
-        //     ,state: 'hotsauce'
-        // }
+        ,{
+            title: '<svg>'
+            ,description: 'little css fun'
+            ,icon: 'fas fa-paint-brush'
+            ,state: 'svg'
+        }
+        ,{
+            title: 'hot sauce'
+            ,description: 'coming soon'
+            ,icon: 'fas fa-pepper-hot'
+            ,state: 'hotsauce'
+        }
     ];
 
     $scope.activeAnimation = false;
