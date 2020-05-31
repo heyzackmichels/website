@@ -31,6 +31,15 @@ npm start
 
 **2.** In browser, go to [localhost:3000](http://localhost:3000).
 
+
+## Tools
+
+**1.** Start scss compiler that watches [/public/scss](https://github.com/heyzackmichels/website/tree/master/public/scss).
+
+```
+npm run scss
+```
+
 ## Built Using
 
 * [Visual Studio Code](https://code.visualstudio.com/download) - Editor
