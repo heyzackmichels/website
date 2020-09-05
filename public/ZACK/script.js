@@ -45,7 +45,9 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
 
 }); //closes routerApp.config
 
-routerApp.controller('appControl', function($scope, $window){
+routerApp.controller('appControl', function($scope, $window, $state){
+
+    $scope.uiRouterState = $state;
 
     $scope.aboutActivities = [
         // {
