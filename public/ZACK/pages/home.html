@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="pure-u-1" ng-repeat="fresh in helloWorld">
-        <div class="nav-link" ui-sref="{{fresh.state}}" title="{{fresh.description}}">
+        <div class="nav-link" ui-sref="{{fresh.state}}" title="{{fresh.description}}" id="{{fresh.state}}">
             <i class="{{fresh.icon}} nav-link-icon"></i>
             &nbsp;{{fresh.title}}
         </div>
