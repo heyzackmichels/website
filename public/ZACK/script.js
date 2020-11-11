@@ -103,7 +103,7 @@ routerApp.controller('appControl', function($scope, $window, $state){
                 ,'fontawesome'
                 ,'git'
                 ,'purecss'
-                ,'scss'
+                ,'dart sass'
             ]
         }
         ,{

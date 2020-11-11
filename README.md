@@ -37,7 +37,7 @@ npm start
 **1.** Start scss compiler that watches [/public/scss](https://github.com/heyzackmichels/website/tree/master/public/scss).
 
 ```
-npm run scss
+npm run sass-watch
 ```
 
 ## Built Using
