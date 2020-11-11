@@ -123,12 +123,12 @@ routerApp.controller('appControl', function($scope, $window, $state){
             ,icon: 'fas fa-ghost'
             ,state: 'sourdough'
         }
-        ,{
-            title: '<svg>'
-            ,description: 'svg, css, js, etc.'
-            ,icon: 'fas fa-paint-brush'
-            ,state: 'svg'
-        }
+        // ,{
+        //     title: '<svg>'
+        //     ,description: 'svg, css, js, etc.'
+        //     ,icon: 'fas fa-paint-brush'
+        //     ,state: 'svg'
+        // }
         ,{
             title: 'hot sauce'
             ,description: 'coming soon'
