@@ -7,17 +7,17 @@
     "sass-watch": "sass --watch public/scss:public/css/scss_output"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.1",
-    "animejs": "^3.2.1",
-    "body-parser": "~1.19.0",
-    "cookie-parser": "^1.4.5",
-    "debug": "~4.2.0",
-    "express": "~4.17.1",
-    "jquery": "^3.5.1",
-    "morgan": "~1.10.0",
-    "pug": "^3.0.0",
-    "purecss": "^2.0.3",
-    "sass": "^1.29.0",
-    "serve-favicon": "~2.5.0"
+    "@fortawesome/fontawesome-free": "5.15.1",
+    "animejs": "3.2.1",
+    "body-parser": "1.19.0",
+    "cookie-parser": "1.4.5",
+    "debug": "4.2.0",
+    "express": "4.17.1",
+    "jquery": "3.5.1",
+    "morgan": "1.10.0",
+    "pug": "3.0.0",
+    "purecss": "2.0.3",
+    "sass": "1.29.0",
+    "serve-favicon": "2.5.0"
   }
 }
