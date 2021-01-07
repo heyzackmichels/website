@@ -100,10 +100,10 @@ routerApp.controller('appControl', function($scope, $window, $state){
             title: 'front'
             ,examples: [
                  'angular.js'
+                ,'dart sass'
                 ,'fontawesome'
                 ,'git'
                 ,'purecss'
-                ,'dart sass'
             ]
         }
         ,{
