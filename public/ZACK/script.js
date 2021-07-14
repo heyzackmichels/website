@@ -37,6 +37,11 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: '/ZACK/pages/hotsauce.html',
             controller: ''
         })
+        .state('dumpling', {
+            url: '/dumpling',
+            templateUrl: '/ZACK/pages/dumpling.html',
+            controller: ''
+        })
         .state('travis', {
             url: '/travis',
             templateUrl: '/ZACK/pages/travis.html',
@@ -73,7 +78,7 @@ routerApp.controller('appControl', function($scope, $window, $state){
                     ,state: 'hotsauce'
                 }
                 ,{name: 'beer'}
-                ,{name: 'sourkraut'}
+                ,{name: 'sauerkraut'}
                 ,{name: 'kimchi'}
             ]
         }
@@ -129,12 +134,18 @@ routerApp.controller('appControl', function($scope, $window, $state){
         //     ,icon: 'fas fa-paint-brush'
         //     ,state: 'svg'
         // }
-        ,{
-            title: 'hot sauce'
-            ,description: 'coming soon'
-            ,icon: 'fas fa-pepper-hot'
-            ,state: 'hotsauce'
-        }
+        // ,{
+        //     title: 'hot sauce'
+        //     ,description: 'coming soon'
+        //     ,icon: 'fas fa-pepper-hot'
+        //     ,state: 'hotsauce'
+        // }
+        // ,{
+        //     title: 'dumpling matrix'
+        //     ,description: 'coming soon'
+        //     ,icon: 'fas fa-utensils'
+        //     ,state: 'dumpling'
+        // }
     ];
 
     $scope.activeAnimation = false;
