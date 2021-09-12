@@ -123,8 +123,8 @@ routerApp.controller('appControl', function($scope, $window, $state){
 
     $scope.helloWorld = [
         {
-            title: 'starting sourdough'
-            ,description: 'starter and bread observations'
+            title: 'Starting Sourdough'
+            ,description: 'Starter and bread observations'
             ,icon: 'fas fa-ghost'
             ,state: 'sourdough'
         }
