@@ -14,10 +14,10 @@
     <div class="pure-u-1">
         <div class="home-title">
             <i class="fas fa-air-freshener"></i>
-            &nbsp;Random
+            &nbsp;just for fun
         </div>
     </div>
-    <div class="pure-u-1" ng-repeat="fresh in helloWorld">
+    <div class="pure-u-1" ng-repeat="fresh in helloWorld | orderBy:'title'">
         <div class="nav-link" ui-sref="{{fresh.state}}" title="{{fresh.description}}" id="{{fresh.state}}">
             <i class="{{fresh.icon}} nav-link-icon"></i>
             &nbsp;{{fresh.title}}

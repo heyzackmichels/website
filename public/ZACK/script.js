@@ -128,24 +128,36 @@ routerApp.controller('appControl', function($scope, $window, $state){
             ,icon: 'fas fa-ghost'
             ,state: 'sourdough'
         }
-        // ,{
-        //     title: '<svg>'
-        //     ,description: 'svg, css, js, etc.'
-        //     ,icon: 'fas fa-paint-brush'
-        //     ,state: 'svg'
-        // }
-        // ,{
-        //     title: 'hot sauce'
-        //     ,description: 'coming soon'
-        //     ,icon: 'fas fa-pepper-hot'
-        //     ,state: 'hotsauce'
-        // }
-        // ,{
-        //     title: 'dumpling matrix'
-        //     ,description: 'coming soon'
-        //     ,icon: 'fas fa-utensils'
-        //     ,state: 'dumpling'
-        // }
+        ,{
+            title: 'SVG'
+            ,description: 'svg, css, js, etc.'
+            ,icon: 'fas fa-code'
+            ,state: 'svg'
+        }
+        ,{
+            title: 'Hot Sauce'
+            ,description: 'coming soon'
+            ,icon: 'fas fa-pepper-hot'
+            ,state: 'hotsauce'
+        }
+        ,{
+            title: 'Dumpling Matrix'
+            ,description: 'coming soon'
+            ,icon: 'fas fa-utensils'
+            ,state: 'dumpling'
+        }
+        ,{
+            title: 'About'
+            ,description: 'About Zack and this site'
+            ,icon: 'fas fa-cog'
+            ,state: 'about'
+        }
+        ,{
+            title: 'Connect'
+            ,description: 'Connect with Zack'
+            ,icon: 'fas fa-share-alt'
+            ,state: 'connect'
+        }
     ];
 
     $scope.activeAnimation = false;
