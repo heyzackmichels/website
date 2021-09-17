@@ -57,10 +57,10 @@ body {
   border-color: #674ea7;
 }
 .profile-name {
-  font-size: 200%;
+  font-size: 1.8rem;
 }
 .profile-title {
-  font-size: 120%;
+  font-size: 1rem;
   color: #585858;
 }
 
@@ -69,20 +69,21 @@ body {
   max-height: 100px;
 }
 .about .nav-link {
-  font-size: 160%;
+  font-size: 1.2rem;
 }
 
 .about-block .header {
   text-align: center;
   color: #888;
-  font-size: 120%;
+  font-size: 1.2rem;
 }
 .about-block-list {
   margin: 10px;
+  font-size: 0.9rem;
 }
 .about-block-list-title {
   color: #537492;
-  font-size: 120%;
+  font-size: 1.2rem;
   margin-bottom: 10px;
   border-bottom: 1px solid #537492;
 }
@@ -193,6 +194,7 @@ body {
   cursor: pointer;
   border-bottom: 1px solid transparent;
   transition: 1s;
+  font-size: 0.9rem;
 }
 .connect-block-target:hover {
   color: #2c6090;
@@ -200,13 +202,14 @@ body {
   transition: 0.25s;
 }
 .connect-block-target-icon {
-  font-size: 300%;
+  font-size: 3rem;
   display: block;
   margin-bottom: 10px;
 }
 
 .nav-link,
 .nav-link a {
+  font-size: 1.2rem;
   text-decoration: none;
   color: #02b9b6;
   text-align: center;
@@ -239,7 +242,7 @@ body {
 .home-title {
   color: #537492;
   text-align: center;
-  font-size: 160%;
+  font-size: 1rem;
   margin-top: 50px;
   border-bottom: 1px solid #537492;
   margin-bottom: 10px;
