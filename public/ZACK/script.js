@@ -136,13 +136,13 @@ routerApp.controller('appControl', function($scope, $window, $state){
         }
         ,{
             title: 'Hot Sauce'
-            ,description: 'coming soon'
+            ,description: 'in progress'
             ,icon: 'fas fa-pepper-hot'
             ,state: 'hotsauce'
         }
         ,{
             title: 'Dumpling Matrix'
-            ,description: 'coming soon'
+            ,description: 'in progress'
             ,icon: 'fas fa-utensils'
             ,state: 'dumpling'
         }

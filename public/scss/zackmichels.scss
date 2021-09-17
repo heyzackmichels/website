@@ -71,10 +71,10 @@ body {
         }
     }
     &-name {
-        font-size: 200%;
+        font-size: 1.8rem;
     }
     &-title {
-        font-size: 120%;
+        font-size: 1rem;
         color: $primary-active;
     }
 }
@@ -92,21 +92,22 @@ body {
         // }
     }
     .nav-link {
-        font-size: 160%;
+        font-size: 1.2rem;
     }
 }
 .about-block {
     & .header {
         text-align: center;
         color: #888;
-        font-size: 120%;
+        font-size: 1.2rem;
     }
     &-list {
         // margin-bottom: 20px;
         margin: 10px;
+        font-size: 0.9rem;
         &-title {
             color: $primary-highlight-2;
-            font-size: 120%;
+            font-size: 1.2rem;
             margin-bottom: 10px;
             border-bottom: 1px solid $primary-highlight-2;
             &.resume {
@@ -240,13 +241,14 @@ body {
         cursor: pointer;
         border-bottom: 1px solid transparent;
         transition: $transition-lg;
+        font-size: 0.9rem;
         &:hover {
             color: $primary-highlight;
             border-color: $primary-highlight;
             transition: $transition-md;
         }
         &-icon {
-            font-size: 300%;
+            font-size: 3rem;
             display: block;
             margin-bottom: 10px;
         }
@@ -254,6 +256,7 @@ body {
 }
 .nav-link,
 .nav-link a {
+    font-size: 1.2rem;
     text-decoration: none;
     color: $primary-highlight-action;
     text-align: center;
@@ -282,7 +285,7 @@ body {
 .home-title {
     color: $primary-highlight-2;
     text-align: center;
-    font-size: 160%;
+    font-size: 1rem;
     margin-top: 50px;
     border-bottom: 1px solid $primary-highlight-2;
     margin-bottom: 10px;
