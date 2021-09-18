@@ -13,75 +13,28 @@
         </div>
     </div>
     <div class="pure-u-1 pure-u-lg-2-3 about-block">
-        <div class="about-block-list">
+        <div class="about-block-list" ng-repeat="i in resume.history">
             <div class="about-block-list-title resume">
-                UI/UX Designer | 2011 - Present
+                {{i.title}}
+                <span ng-if="i.start" class="date">
+                    | {{i.start}}
+                    <span ng-if="i.end" >
+                        - {{i.end}}
+                    </span>
+                </span>
             </div>
             <ul>
-                <li>Builds designs (lo-fidelity to hi-fidelity) and end-to-end workflows for internal and client-facing experiences</li>
-                <li>Rapidly iterates and adjusts features based on customer feedback, application usage metrics, and stakeholder input</li>
-                <li>Enhances application experience by modernizing features based on web and mobile best practices</li>
-                <li>Collaborates with software developers by engineering initial layout and design for new features and polishing final output</li>
-            </ul>
-        </div>
-        <div class="about-block-list">
-            <div class="about-block-list-title resume">
-                Business Analyst | 2017 - Present
-            </div>
-            <ul>
-                <li>Generates reports and datasets for industry trends, client usage, feature adoption, and targeted data cleanup using SQL and Mixpanel</li>
-                <li>Streamlines agile process by serving as a liaison between product and tech teams to determine innovative solutions that consider technical limitations and product needs</li>
-                <li>Traces through application codebase to identify and update bugs and enhancement points</li>
-                <li>Acquires extensive knowledge of business logic and processes to support engineering and product teams </li>
-            </ul>
-        </div>
-        <div class="about-block-list">
-            <div class="about-block-list-title resume">
-                Product Manager | 2013 - 2017
-            </div>
-            <ul>
-                <li>Supports internal and client-facing applications by working closely with helpdesk, client services, and sales</li>
-                <li>Creates stories and bugs while maintaining backlog in accordance to stakeholder priorities and issue severity</li>
-                <li>Writes comprehensive acceptance criteria and test case steps for QA</li>
-                <li>Facilitates scrum initiatives including standups, grooming sessions, sprint planning, and retrospectives</li>
-                <li>Managed six remote development team contractors by defining tasks, performing testing, and approving output before release | 2011 - 2015</li>
+                <li ng-repeat="x in i.subpoints">{{x.point}}</li>
             </ul>
         </div>
         <div class="pure-g">
-            <div class="pure-u-1">
+            <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1-2" ng-repeat="i in resume.skills">
                 <div class="about-block-list">
                     <div class="about-block-list-title resume">
-                        Virginia Polytechnic and State University
+                        {{i.type}}
                     </div>
                     <ul>
-                        <li>B.S. Industrial Design | 2010</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1-2">
-                <div class="about-block-list">
-                    <div class="about-block-list-title resume">
-                        Proficient
-                    </div>
-                    <ul>
-                        <li>Javascript</li>
-                        <li>Highcharts</li>
-                        <li>Photoshop</li>
-                        <li>GIT</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1-2">
-                <div class="about-block-list">
-                    <div class="about-block-list-title resume">
-                        Experienced
-                    </div>
-                    <ul>
-                        <li>SQL</li>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>SCSS</li>
-                        <li>AngularJS</li>                        
+                        <li ng-repeat="x in i.skills">{{x.name}}</li>
                     </ul>
                 </div>
             </div>

@@ -20,6 +20,7 @@
         <div class="nav-link" ui-sref="{{fresh.state}}" title="{{fresh.description}}" id="{{fresh.state}}">
             <i class="{{fresh.icon}} nav-link-icon"></i>
             &nbsp;{{fresh.title}}
+            <i class="fas fa-wrench" title="working on it" style="color:#ff7700;" ng-if="!fresh.mvp"></i>
         </div>
     </div>
 </div>

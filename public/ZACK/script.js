@@ -127,36 +127,42 @@ routerApp.controller('appControl', function($scope, $window, $state){
             ,description: 'Starter and bread observations'
             ,icon: 'fas fa-ghost'
             ,state: 'sourdough'
+            ,mvp: true
         }
         ,{
             title: 'SVG'
             ,description: 'svg, css, js, etc.'
             ,icon: 'fas fa-code'
             ,state: 'svg'
+            ,mvp: false
         }
         ,{
             title: 'Hot Sauce'
-            ,description: 'in progress'
+            ,description: 'working on it'
             ,icon: 'fas fa-pepper-hot'
             ,state: 'hotsauce'
+            ,mvp: false
         }
         ,{
             title: 'Dumpling Matrix'
-            ,description: 'in progress'
+            ,description: 'working on it'
             ,icon: 'fas fa-utensils'
             ,state: 'dumpling'
+            ,mvp: false
         }
         ,{
             title: 'About'
             ,description: 'About Zack and this site'
             ,icon: 'fas fa-cog'
             ,state: 'about'
+            ,mvp: true
         }
         ,{
             title: 'Connect'
             ,description: 'Connect with Zack'
             ,icon: 'fas fa-share-alt'
             ,state: 'connect'
+            ,mvp: true
         }
     ];
 
@@ -311,5 +317,74 @@ routerApp.controller('appControl', function($scope, $window, $state){
             }
         ]
     };
+
+
+    $scope.resume = {
+        history: [
+            {
+                title: 'UI/UX Designer'
+                ,start: '2011'
+                ,end: 'Present'
+                ,subpoints: [
+                    {point:'Builds designs (lo-fidelity to hi-fidelity) and end-to-end workflows for internal and client-facing experiences'}
+                    ,{point:'Rapidly iterates and adjusts features based on customer feedback, application usage metrics, and stakeholder input'}
+                    ,{point:'Enhances application experience by modernizing features based on web and mobile best practices'}
+                    ,{point:'Collaborates with software developers by engineering initial layout and design for new features and polishing final output'}
+                ]
+            }
+            ,{
+                title: 'Business Analyst'
+                ,start: '2017'
+                ,end: 'Present'
+                ,subpoints: [
+                    {point:'Streamlines agile process by serving as a liaison between product and tech teams to determine innovative solutions that consider technical limitations and product needs'}
+                    ,{point:'Traces through application codebase to identify and update bugs and enhancement points'}
+                    ,{point:'Acquires extensive knowledge of business logic and processes to support engineering and product teams '}
+                    ,{point:'Generates reports and datasets for industry trends, client usage, feature adoption, and targeted data cleanup using SQL and Mixpanel'}
+                ]
+            }
+            ,{
+                title: 'Product Manager'
+                ,start: '2013'
+                ,end: '2017'
+                ,subpoints: [
+                    {point:'Supports internal and client-facing applications by working closely with helpdesk, client services, and sales'}
+                    ,{point:'Creates stories and bugs while maintaining backlog in accordance to stakeholder priorities and issue severity'}
+                    ,{point:'Writes comprehensive acceptance criteria and test case steps for QA'}
+                    ,{point:'Facilitates scrum initiatives including standups, grooming sessions, sprint planning, and retrospectives'}
+                    ,{point:'Managed six remote development team contractors by defining tasks, performing testing, and approving output before release | 2011 - 2015'}
+                ]
+            }
+            ,{
+                title: 'Virginia Polytechnic and State University'
+                ,start: '2010'
+                ,subpoints: [
+                    {point:'B.S. Industrial Design'}
+                ]
+            }
+        ]
+        ,skills : [
+            {
+                type: 'Proficient'
+                ,skills: [
+                    {name:'Javascript'}
+                    ,{name:'Highcharts'}
+                    ,{name:'Photoshop'}
+                    ,{name:'GIT'}
+                ]
+            }
+            ,{
+                type: 'Experienced'
+                ,skills: [
+                    {name:'SQL'}
+                    ,{name:'HTML5'}
+                    ,{name:'CSS3'}
+                    ,{name:'SCSS'}
+                    ,{name:'AngularJS'}
+                ]
+            }
+        ]
+    }
+
 
 }); //closes routerApp.controller

@@ -91,6 +91,9 @@ body {
   color: #674ea7;
   border-bottom-color: #674ea7;
 }
+.about-block-list-title .date {
+  color: #878a7b;
+}
 .about-block-list ul {
   list-style-position: outside;
   margin: 0;
@@ -232,7 +235,7 @@ body {
 .nav-link a:hover .nav-link-icon {
   transition: 0.25s;
   transform: scale(1.5) rotate(-15deg);
-  color: #02b9b6;
+  color: #2c6090;
 }
 .nav-link a,
 .nav-link a a {

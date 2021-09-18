@@ -114,6 +114,9 @@ body {
                 color: $resume-color;
                 border-bottom-color: $resume-color;
             }
+            & .date{
+                color: #878a7b;
+            }
         }
         & ul {
             // list-style: none;
@@ -276,7 +279,8 @@ body {
     &:hover .nav-link-icon {
         transition: $transition-md;
         transform: scale(1.5) rotate(-15deg);
-        color: $primary-highlight-action;
+        // color: $primary-highlight-action;
+        color: $primary-highlight;
     }
     & a {
         border: none;
