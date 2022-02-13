@@ -1,14 +1,28 @@
 // npm run scss
 
-$primary: #333;
-$primary-active: #585858;
-$primary-passive: #ffffff;
-$primary-highlight: #2c6090;
-$primary-highlight-action: #02b9b6;
-$primary-highlight-2: #537492;
+// orginal theme
+// $primary: #333;
+// $primary-active: #585858;
+// $primary-passive: #ffffff;
+// $primary-highlight: #2c6090;
+// $primary-highlight-action: #02b9b6;
+// $primary-highlight-2: #537492;
+// $transition-md: .25s;
+// $transition-lg: 1s;
+// $resume-color: #674ea7; 
+
+// background gradient
+$primary: #fff;
+$primary-active: #fff;
+$primary-active-menu: #6A5DF825;
+$primary-passive: #fff;
+$primary-highlight: #fff;
+$primary-highlight-action: #00fffb;
+$primary-highlight-2: #fff;
 $transition-md: .25s;
 $transition-lg: 1s;
-$resume-color: #674ea7; 
+$resume-color: #fff;
+$highlight-color: #6A5DF8;
 
 @keyframes myMove {
     0% {
@@ -38,21 +52,36 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: $primary;
-    background-color: $primary-passive;
+    // background-color: $primary-passive;
     counter-reset: myList;
+    background: linear-gradient(137.42deg, #1A75FF 0%, #6A5DF8 50.43%, #C957E6 100%);
+    background-size: 300% 300%;
+    animation: gradient 20s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 // pure css add-on's
 .zack-menu {
     color: $primary-passive;
     background-color: $primary;
     .pure-menu-link {
-        color: #fff;
+        // color: #fff;
+        color: $highlight-color;
         text-decoration: none;
         &:focus,
         &:hover,
         &.active {
             // background-color: #585858;
-            background-color: $primary-active;
+            background-color: $primary-active-menu;
         }
     }
 }
@@ -98,7 +127,7 @@ body {
 .about-block {
     & .header {
         text-align: center;
-        color: #888;
+        color: $primary-active;
         font-size: 1.2rem;
     }
     &-list {
@@ -113,12 +142,14 @@ body {
             &.resume {
                 color: $resume-color;
                 border-bottom-color: $resume-color;
+                font-weight: bold;
             }
             & .date{
-                color: #878a7b;
+                // color: #878a7b;
+                font-weight: normal;
             }
             & .company{
-                color: #333;
+                // color: #333;
                 font-size: 1rem;
             }
         }
@@ -141,7 +172,7 @@ body {
             > li:before {
                 content: counter(myList);
                 counter-increment: myList;
-                color: $primary-passive;
+                color: $highlight-color;
                 background-color: $primary-highlight-2;
                 margin-right: 5px;
                 font-weight: bold;
@@ -155,7 +186,7 @@ body {
         }
         &.nested {
             & .description {
-                color: #888;
+                color: $primary-active;
                 display: inline-block;
                 padding-left: 25px;
                 font-size: 90%;
