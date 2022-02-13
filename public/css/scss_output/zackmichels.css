@@ -94,6 +94,10 @@ body {
 .about-block-list-title .date {
   color: #878a7b;
 }
+.about-block-list-title .company {
+  color: #333;
+  font-size: 1rem;
+}
 .about-block-list ul {
   list-style-position: outside;
   margin: 0;
