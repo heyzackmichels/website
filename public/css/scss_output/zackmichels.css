@@ -93,23 +93,20 @@ body {
 }
 .about-block-list {
   margin: 10px;
+  margin-bottom: 30px;
   font-size: 1rem;
 }
 .about-block-list-title {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 10px;
   border-bottom: 1px solid #fff;
 }
 .about-block-list-title.resume {
   color: #fff;
   border-bottom-color: #fff;
-  font-weight: bold;
 }
 .about-block-list-title .date {
-  font-weight: normal;
-}
-.about-block-list-title .company {
   font-size: 1rem;
 }
 .about-block-list ul {
