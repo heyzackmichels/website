@@ -135,27 +135,29 @@ body {
         font-size: 1.2rem;
     }
     &-list {
-        // margin-bottom: 20px;
         margin: 10px;
+        margin-bottom: 30px;
         font-size: 1rem;
         &-title {
             color: $primary-highlight-2;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-bottom: 10px;
             border-bottom: 1px solid $primary-highlight-2;
             &.resume {
                 color: $resume-color;
                 border-bottom-color: $resume-color;
-                font-weight: bold;
+                // font-weight: bold;
             }
             & .date{
                 // color: #878a7b;
-                font-weight: normal;
-            }
-            & .company{
-                // color: #333;
+                // font-weight: normal;
                 font-size: 1rem;
             }
+            // & .company{
+            //     // color: #333;
+            //     // font-size: 1rem;
+            //     // font-weight: normal;
+            // }
         }
         & ul {
             // list-style: none;

@@ -367,18 +367,18 @@ routerApp.controller('appControl', function($scope, $window, $state){
                     ,{point:'Managed six remote development team contractors by defining tasks, performing testing, and approving output before release | 2011 - 2015'}
                 ]
             }
-            ,{
-                title: 'Virginia Polytechnic and State University'
-                ,start: '2010'
-                ,subpoints: [
-                    {point:'B.S. Industrial Design'}
-                ]
-            }
             // ,{
-            //     title: 'B.S. Industrial Design'
+            //     title: 'Virginia Polytechnic and State University'
             //     ,start: '2010'
-            //     ,company: 'Virginia Polytechnic and State University'
+            //     ,subpoints: [
+            //         {point:'B.S. Industrial Design'}
+            //     ]
             // }
+            ,{
+                title: 'Bachelor of Science, Industrial Design'
+                ,start: '2010'
+                ,company: 'Virginia Polytechnic and State University'
+            }
         ]
         ,skills : [
             {
