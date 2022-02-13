@@ -13,14 +13,14 @@
 <div class="pure-g">
     <div class="pure-u-1">
         <div class="home-title">
-            <i class="fas fa-air-freshener"></i>&nbsp;just for fun
+            Just for fun:
         </div>
     </div>
     <div class="pure-u-1" ng-repeat="fresh in helloWorld | orderBy:'title'">
         <div class="nav-link" ui-sref="{{fresh.state}}" title="{{fresh.description}}" id="{{fresh.state}}">
             <i class="{{fresh.icon}} nav-link-icon"></i>
             &nbsp;{{fresh.title}}
-            <i class="fas fa-wrench" title="working on it" style="color:#ff7700;" ng-if="!fresh.mvp"></i>
+            <i class="fas fa-wrench under_construction" title="working on it" ng-if="!fresh.mvp"></i>
         </div>
     </div>
 </div>

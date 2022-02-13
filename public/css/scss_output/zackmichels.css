@@ -55,19 +55,20 @@ body {
   background-color: #6A5DF825;
 }
 
+.under_construction {
+  color: #ff9900;
+}
+
 .profile {
   display: table;
   margin: auto;
   text-align: center;
 }
 .profile-pic img {
-  border: 3px solid #fff;
+  border: 3px solid #6A5DF8;
   border-radius: 75px;
   max-width: 150px;
   max-height: 150px;
-}
-.profile-pic img.resume {
-  border-color: #fff;
 }
 .profile-name {
   font-size: 1.8rem;
@@ -92,7 +93,7 @@ body {
 }
 .about-block-list {
   margin: 10px;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .about-block-list-title {
   color: #fff;

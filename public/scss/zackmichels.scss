@@ -49,6 +49,7 @@ html {
 }
 body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    // font-size: 14px;
     font-size: 14px;
     line-height: 1.42857143;
     color: $primary;
@@ -86,18 +87,21 @@ body {
     }
 }
 // zack classes
+.under_construction {
+    color: #ff9900;
+}
 .profile {
     display: table;
     margin: auto;
     text-align: center;
     &-pic img {
-        border: 3px solid $primary-highlight;
+        border: 3px solid $highlight-color;
         border-radius: 75px;
         max-width: 150px;
         max-height: 150px;
-        &.resume {
-            border-color: $resume-color;
-        }
+        // &.resume {
+        //     border-color: $resume-color;
+        // }
     }
     &-name {
         font-size: 1.8rem;
@@ -133,7 +137,7 @@ body {
     &-list {
         // margin-bottom: 20px;
         margin: 10px;
-        font-size: 0.9rem;
+        font-size: 1rem;
         &-title {
             color: $primary-highlight-2;
             font-size: 1.2rem;
