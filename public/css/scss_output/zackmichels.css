@@ -78,6 +78,9 @@ body {
   color: #fff;
 }
 
+.about .profile {
+  margin-bottom: 20px;
+}
 .about .profile-pic img {
   max-width: 100px;
   max-height: 100px;
