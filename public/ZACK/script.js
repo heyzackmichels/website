@@ -322,9 +322,19 @@ routerApp.controller('appControl', function($scope, $window, $state){
     $scope.resume = {
         history: [
             {
-                title: 'UI/UX Designer'
-                ,start: '2011'
+                title: 'Director, Insights & Reporting'
+                ,company: 'Tempest'
+                ,start: '2022'
                 ,end: 'Present'
+                ,subpoints: [
+                    // {point:'hello world'}
+                ]
+            }
+            ,{
+                title: 'UI/UX Designer'
+                ,company: 'Knowland'
+                ,start: '2011'
+                ,end: '2021'
                 ,subpoints: [
                     {point:'Builds designs (lo-fidelity to hi-fidelity) and end-to-end workflows for internal and client-facing experiences'}
                     ,{point:'Rapidly iterates and adjusts features based on customer feedback, application usage metrics, and stakeholder input'}
@@ -334,8 +344,9 @@ routerApp.controller('appControl', function($scope, $window, $state){
             }
             ,{
                 title: 'Business Analyst'
+                ,company: 'Knowland'
                 ,start: '2017'
-                ,end: 'Present'
+                ,end: '2021'
                 ,subpoints: [
                     {point:'Streamlines agile process by serving as a liaison between product and tech teams to determine innovative solutions that consider technical limitations and product needs'}
                     ,{point:'Traces through application codebase to identify and update bugs and enhancement points'}
@@ -345,6 +356,7 @@ routerApp.controller('appControl', function($scope, $window, $state){
             }
             ,{
                 title: 'Product Manager'
+                ,company: 'Knowland'
                 ,start: '2013'
                 ,end: '2017'
                 ,subpoints: [
@@ -362,25 +374,30 @@ routerApp.controller('appControl', function($scope, $window, $state){
                     {point:'B.S. Industrial Design'}
                 ]
             }
+            // ,{
+            //     title: 'B.S. Industrial Design'
+            //     ,start: '2010'
+            //     ,company: 'Virginia Polytechnic and State University'
+            // }
         ]
         ,skills : [
             {
-                type: 'Proficient'
-                ,skills: [
-                    {name:'Javascript'}
-                    ,{name:'Highcharts'}
-                    ,{name:'Photoshop'}
-                    ,{name:'GIT'}
-                ]
-            }
-            ,{
                 type: 'Experienced'
                 ,skills: [
                     {name:'SQL'}
                     ,{name:'HTML5'}
                     ,{name:'CSS3'}
                     ,{name:'SCSS'}
+                    
+                ]
+            }
+            ,{
+                type: 'Proficient'
+                ,skills: [
+                    {name:'GIT'}
+                    ,{name:'Javascript'}
                     ,{name:'AngularJS'}
+                    ,{name:'Adobe Suite'}
                 ]
             }
         ]

@@ -8,9 +8,6 @@
                 Zack Michels
             </div>
             <div class="profile-title">
-                Business Analyst | Knowland | 2011 - Present
-            </div>
-            <div>
                 Prototyping, developing, and managing solutions for web applications
             </div>
         </div>
@@ -23,6 +20,12 @@
                     | {{i.start}}
                     <span ng-if="i.end" >
                         - {{i.end}}
+                    </span>
+                    <span ng-if="i.company" >
+                        |
+                        <span class="company">
+                            {{i.company}}
+                        </span>
                     </span>
                 </span>
             </div>
