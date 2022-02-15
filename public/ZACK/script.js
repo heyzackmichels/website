@@ -59,64 +59,64 @@ routerApp.controller('appControl', function($scope, $window, $state){
         //      title: 'Alexandria, VA'
         // },
         {
-            title: 'crochet'
+            title: 'Crochet'
             ,examples: [
-                 {name: 'hats'}
-                ,{name: 'amigurumi'}
-                ,{name: 'odds & ends'}
+                 {name: 'Hats'}
+                ,{name: 'Amigurumi'}
+                ,{name: 'Odds & Ends'}
             ]
         }
         ,{
-             title: 'fermentation'
+             title: 'Fermentation'
             ,examples: [
                 {  
-                    name: 'sourdough'
+                    name: 'Sourdough'
                     ,state: 'sourdough'
                 }
                 ,{
-                    name: 'hot sauce'
+                    name: 'Hot sauce'
                     ,state: 'hotsauce'
                 }
-                ,{name: 'beer'}
-                ,{name: 'sauerkraut'}
-                ,{name: 'kimchi'}
+                ,{name: 'Beer'}
+                ,{name: 'Sauerkraut'}
+                ,{name: 'Kimchi'}
             ]
         }
         ,{
-            title: 'raspberry pi'
+            title: 'Raspberry Pi'
             ,examples: [
-                 {name: 'arcade'}
-                ,{name: 'guitar pedal'}
-                ,{name: 'wireless display'}
+                 {name: 'Arcade'}
+                ,{name: 'Guitar pedal'}
+                ,{name: 'Wireless display'}
             ]
         }
         ,{
-             title: 'stringed instruments'
+             title: 'Stringed instruments'
             ,examples: [
-                 {name: 'ukulele'}
-                ,{name: 'mandolin'}
-                ,{name: 'guitar'}
+                 {name: 'Ukulele'}
+                ,{name: 'Mandolin'}
+                ,{name: 'Guitar'}
             ]
         }
     ];
 
     $scope.siteParts = [
         {
-            title: 'front'
+            title: 'Front'
             ,examples: [
-                 'angular.js'
-                ,'dart sass'
-                ,'fontawesome'
-                ,'git'
-                ,'purecss'
+                 'AngularJS'
+                ,'Dart Sass'
+                ,'Font Awesome'
+                ,'Git'
+                ,'Pure CSS'
             ]
         }
         ,{
-            title: 'back'
+            title: 'Back'
             ,examples: [
-                 'express'
-                ,'nginx'
-                ,'node'
+                 'Express'
+                ,'NGINX'
+                ,'Node.js'
             ]
         }
     ];
