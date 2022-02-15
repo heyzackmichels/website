@@ -29,7 +29,7 @@ body {
   counter-reset: myList;
   background: linear-gradient(137.42deg, #1A75FF 0%, #6A5DF8 50.43%, #C957E6 100%);
   background-size: 300% 300%;
-  animation: gradient 20s ease infinite;
+  animation: gradient 60s ease infinite;
 }
 
 @keyframes gradient {
