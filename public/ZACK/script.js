@@ -41,11 +41,6 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/dumpling',
             templateUrl: '/ZACK/pages/dumpling.html',
             controller: ''
-        })
-        .state('travis', {
-            url: '/travis',
-            templateUrl: '/ZACK/pages/travis.html',
-            controller: ''
         });
 
 }); //closes routerApp.config
@@ -63,7 +58,7 @@ routerApp.controller('appControl', function($scope, $window, $state){
             ,examples: [
                  {name: 'Hats'}
                 ,{name: 'Amigurumi'}
-                ,{name: 'Odds & Ends'}
+                ,{name: 'Potholders'}
             ]
         }
         ,{
@@ -91,7 +86,7 @@ routerApp.controller('appControl', function($scope, $window, $state){
             ]
         }
         ,{
-             title: 'Stringed instruments'
+             title: 'Stringed Instruments'
             ,examples: [
                  {name: 'Ukulele'}
                 ,{name: 'Mandolin'}
@@ -122,35 +117,35 @@ routerApp.controller('appControl', function($scope, $window, $state){
     ];
 
     $scope.helloWorld = [
+        // {
+        //     title: 'Starting Sourdough'
+        //     ,description: 'Starter and bread observations'
+        //     ,icon: 'fas fa-ghost'
+        //     ,state: 'sourdough'
+        //     ,mvp: true
+        // }
+        // ,{
+        //     title: 'SVG'
+        //     ,description: 'svg, css, js, etc.'
+        //     ,icon: 'fas fa-code'
+        //     ,state: 'svg'
+        //     ,mvp: false
+        // }
+        // ,{
+        //     title: 'Hot Sauce'
+        //     ,description: 'working on it'
+        //     ,icon: 'fas fa-pepper-hot'
+        //     ,state: 'hotsauce'
+        //     ,mvp: false
+        // }
+        // ,{
+        //     title: 'Dumpling Matrix'
+        //     ,description: 'working on it'
+        //     ,icon: 'fas fa-utensils'
+        //     ,state: 'dumpling'
+        //     ,mvp: false
+        // }
         {
-            title: 'Starting Sourdough'
-            ,description: 'Starter and bread observations'
-            ,icon: 'fas fa-ghost'
-            ,state: 'sourdough'
-            ,mvp: true
-        }
-        ,{
-            title: 'SVG'
-            ,description: 'svg, css, js, etc.'
-            ,icon: 'fas fa-code'
-            ,state: 'svg'
-            ,mvp: false
-        }
-        ,{
-            title: 'Hot Sauce'
-            ,description: 'working on it'
-            ,icon: 'fas fa-pepper-hot'
-            ,state: 'hotsauce'
-            ,mvp: false
-        }
-        ,{
-            title: 'Dumpling Matrix'
-            ,description: 'working on it'
-            ,icon: 'fas fa-utensils'
-            ,state: 'dumpling'
-            ,mvp: false
-        }
-        ,{
             title: 'About'
             ,description: 'About Zack and this site'
             ,icon: 'fas fa-cog'
@@ -394,8 +389,8 @@ routerApp.controller('appControl', function($scope, $window, $state){
             ,{
                 type: 'Proficient'
                 ,skills: [
-                    {name:'GIT'}
-                    ,{name:'Javascript'}
+                    {name:'Git'}
+                    ,{name:'JavaScript'}
                     ,{name:'AngularJS'}
                     ,{name:'Adobe Suite'}
                 ]

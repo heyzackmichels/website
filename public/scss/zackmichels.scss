@@ -94,6 +94,7 @@ body {
     display: table;
     margin: auto;
     text-align: center;
+    margin-top:20px;
     &-pic img {
         border: 3px solid $highlight-color;
         border-radius: 75px;
@@ -320,7 +321,7 @@ body {
     }
     &:hover .nav-link-icon {
         transition: $transition-md;
-        transform: scale(1.5) rotate(-15deg);
+        transform: scale(1.2) rotate(-10deg);
         // color: $primary-highlight-action;
         color: $primary-highlight;
     }
