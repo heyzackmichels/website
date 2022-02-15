@@ -41,11 +41,6 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/dumpling',
             templateUrl: '/ZACK/pages/dumpling.html',
             controller: ''
-        })
-        .state('travis', {
-            url: '/travis',
-            templateUrl: '/ZACK/pages/travis.html',
-            controller: ''
         });
 
 }); //closes routerApp.config
@@ -59,98 +54,98 @@ routerApp.controller('appControl', function($scope, $window, $state){
         //      title: 'Alexandria, VA'
         // },
         {
-            title: 'crochet'
+            title: 'Crochet'
             ,examples: [
-                 {name: 'hats'}
-                ,{name: 'amigurumi'}
-                ,{name: 'odds & ends'}
+                 {name: 'Hats'}
+                ,{name: 'Amigurumi'}
+                ,{name: 'Potholders'}
             ]
         }
         ,{
-             title: 'fermentation'
+             title: 'Fermentation'
             ,examples: [
                 {  
-                    name: 'sourdough'
+                    name: 'Sourdough'
                     ,state: 'sourdough'
                 }
                 ,{
-                    name: 'hot sauce'
+                    name: 'Hot sauce'
                     ,state: 'hotsauce'
                 }
-                ,{name: 'beer'}
-                ,{name: 'sauerkraut'}
-                ,{name: 'kimchi'}
+                ,{name: 'Beer'}
+                ,{name: 'Sauerkraut'}
+                ,{name: 'Kimchi'}
             ]
         }
         ,{
-            title: 'raspberry pi'
+            title: 'Raspberry Pi'
             ,examples: [
-                 {name: 'arcade'}
-                ,{name: 'guitar pedal'}
-                ,{name: 'wireless display'}
+                 {name: 'Arcade'}
+                ,{name: 'Guitar pedal'}
+                ,{name: 'Wireless display'}
             ]
         }
         ,{
-             title: 'stringed instruments'
+             title: 'Stringed Instruments'
             ,examples: [
-                 {name: 'ukulele'}
-                ,{name: 'mandolin'}
-                ,{name: 'guitar'}
+                 {name: 'Ukulele'}
+                ,{name: 'Mandolin'}
+                ,{name: 'Guitar'}
             ]
         }
     ];
 
     $scope.siteParts = [
         {
-            title: 'front'
+            title: 'Front'
             ,examples: [
-                 'angular.js'
-                ,'dart sass'
-                ,'fontawesome'
-                ,'git'
-                ,'purecss'
+                 'AngularJS'
+                ,'Dart Sass'
+                ,'Font Awesome'
+                ,'Git'
+                ,'Pure CSS'
             ]
         }
         ,{
-            title: 'back'
+            title: 'Back'
             ,examples: [
-                 'express'
-                ,'nginx'
-                ,'node'
+                 'Express'
+                ,'NGINX'
+                ,'Node.js'
             ]
         }
     ];
 
     $scope.helloWorld = [
+        // {
+        //     title: 'Starting Sourdough'
+        //     ,description: 'Starter and bread observations'
+        //     ,icon: 'fas fa-ghost'
+        //     ,state: 'sourdough'
+        //     ,mvp: true
+        // }
+        // ,{
+        //     title: 'SVG'
+        //     ,description: 'svg, css, js, etc.'
+        //     ,icon: 'fas fa-code'
+        //     ,state: 'svg'
+        //     ,mvp: false
+        // }
+        // ,{
+        //     title: 'Hot Sauce'
+        //     ,description: 'working on it'
+        //     ,icon: 'fas fa-pepper-hot'
+        //     ,state: 'hotsauce'
+        //     ,mvp: false
+        // }
+        // ,{
+        //     title: 'Dumpling Matrix'
+        //     ,description: 'working on it'
+        //     ,icon: 'fas fa-utensils'
+        //     ,state: 'dumpling'
+        //     ,mvp: false
+        // }
         {
-            title: 'Starting Sourdough'
-            ,description: 'Starter and bread observations'
-            ,icon: 'fas fa-ghost'
-            ,state: 'sourdough'
-            ,mvp: true
-        }
-        ,{
-            title: 'SVG'
-            ,description: 'svg, css, js, etc.'
-            ,icon: 'fas fa-code'
-            ,state: 'svg'
-            ,mvp: false
-        }
-        ,{
-            title: 'Hot Sauce'
-            ,description: 'working on it'
-            ,icon: 'fas fa-pepper-hot'
-            ,state: 'hotsauce'
-            ,mvp: false
-        }
-        ,{
-            title: 'Dumpling Matrix'
-            ,description: 'working on it'
-            ,icon: 'fas fa-utensils'
-            ,state: 'dumpling'
-            ,mvp: false
-        }
-        ,{
             title: 'About'
             ,description: 'About Zack and this site'
             ,icon: 'fas fa-cog'
@@ -394,8 +389,8 @@ routerApp.controller('appControl', function($scope, $window, $state){
             ,{
                 type: 'Proficient'
                 ,skills: [
-                    {name:'GIT'}
-                    ,{name:'Javascript'}
+                    {name:'Git'}
+                    ,{name:'JavaScript'}
                     ,{name:'AngularJS'}
                     ,{name:'Adobe Suite'}
                 ]

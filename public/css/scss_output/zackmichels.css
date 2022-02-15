@@ -63,6 +63,7 @@ body {
   display: table;
   margin: auto;
   text-align: center;
+  margin-top: 20px;
 }
 .profile-pic img {
   border: 3px solid #6A5DF8;
@@ -252,7 +253,7 @@ body {
 .nav-link:hover .nav-link-icon,
 .nav-link a:hover .nav-link-icon {
   transition: 0.25s;
-  transform: scale(1.5) rotate(-15deg);
+  transform: scale(1.2) rotate(-10deg);
   color: #fff;
 }
 .nav-link a,
