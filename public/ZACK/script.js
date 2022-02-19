@@ -45,7 +45,16 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
 
 }); //closes routerApp.config
 
-routerApp.controller('appControl', function($scope, $window, $state){
+routerApp.controller('appControl', function($scope, $http, $state){
+
+    $http({
+        method: 'GET',
+        url: 'https://store.steampowered.com/api/appdetails?appids=785790'
+    }).then(function successCallback(response) {
+        console.log('successCallback'+response);
+    }, function errorCallback(response) {
+        console.log('errorCallback'+response);
+    });
 
     $scope.uiRouterState = $state;
 
@@ -331,10 +340,10 @@ routerApp.controller('appControl', function($scope, $window, $state){
                 ,start: '2011'
                 ,end: '2021'
                 ,subpoints: [
-                    {point:'Builds designs (lo-fidelity to hi-fidelity) and end-to-end workflows for internal and client-facing experiences'}
-                    ,{point:'Rapidly iterates and adjusts features based on customer feedback, application usage metrics, and stakeholder input'}
-                    ,{point:'Enhances application experience by modernizing features based on web and mobile best practices'}
-                    ,{point:'Collaborates with software developers by engineering initial layout and design for new features and polishing final output'}
+                    {point:'Builds designs (lo-fidelity to hi-fidelity) and end-to-end workflows for internal and client-facing experiences.'}
+                    ,{point:'Rapidly iterates and adjusts features based on customer feedback, application usage metrics, and stakeholder input.'}
+                    ,{point:'Enhances application experience by modernizing features based on web and mobile best practices.'}
+                    ,{point:'Collaborates with software developers by engineering initial layout and design for new features and polishing final output.'}
                 ]
             }
             ,{
@@ -343,10 +352,10 @@ routerApp.controller('appControl', function($scope, $window, $state){
                 ,start: '2017'
                 ,end: '2021'
                 ,subpoints: [
-                    {point:'Streamlines agile process by serving as a liaison between product and tech teams to determine innovative solutions that consider technical limitations and product needs'}
-                    ,{point:'Traces through application codebase to identify and update bugs and enhancement points'}
-                    ,{point:'Acquires extensive knowledge of business logic and processes to support engineering and product teams '}
-                    ,{point:'Generates reports and datasets for industry trends, client usage, feature adoption, and targeted data cleanup using SQL and Mixpanel'}
+                    {point:'Streamlines agile process by serving as a liaison between product and tech teams to determine innovative solutions that consider technical limitations and product needs.'}
+                    ,{point:'Traces through application codebase to identify and update bugs and enhancement points.'}
+                    ,{point:'Acquires extensive knowledge of business logic and processes to support engineering and product teams.'}
+                    ,{point:'Generates reports and datasets for industry trends, client usage, feature adoption, and targeted data cleanup using SQL and Mixpanel.'}
                 ]
             }
             ,{
@@ -355,11 +364,11 @@ routerApp.controller('appControl', function($scope, $window, $state){
                 ,start: '2013'
                 ,end: '2017'
                 ,subpoints: [
-                    {point:'Supports internal and client-facing applications by working closely with helpdesk, client services, and sales'}
-                    ,{point:'Creates stories and bugs while maintaining backlog in accordance to stakeholder priorities and issue severity'}
-                    ,{point:'Writes comprehensive acceptance criteria and test case steps for QA'}
-                    ,{point:'Facilitates scrum initiatives including standups, grooming sessions, sprint planning, and retrospectives'}
-                    ,{point:'Managed six remote development team contractors by defining tasks, performing testing, and approving output before release | 2011 - 2015'}
+                    {point:'Supports internal and client-facing applications by working closely with helpdesk, client services, and sales.'}
+                    ,{point:'Creates stories and bugs while maintaining backlog in accordance to stakeholder priorities and issue severity.'}
+                    ,{point:'Writes comprehensive acceptance criteria and test case steps for QA.'}
+                    ,{point:'Facilitates scrum initiatives including standups, grooming sessions, sprint planning, and retrospectives.'}
+                    ,{point:'Managed six remote development team contractors by defining tasks, performing testing, and approving output before release | 2011 - 2015.'}
                 ]
             }
             ,{
