@@ -47,10 +47,12 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
 
 routerApp.controller('appControl', function($scope, $http, $state){
 
-    $http({
-        method: 'GET',
-        url: 'https://store.steampowered.com/api/appdetails?appids=785790'
-    }).then(function successCallback(response) {
+    var req_appdetails = {
+         method: 'GET'
+        ,url: 'https://store.steampowered.com/api/appdetails?appids=785790&format=json'
+    }
+
+    $http(req_appdetails).then(function successCallback(response) {
         console.log('successCallback'+response);
     }, function errorCallback(response) {
         console.log('errorCallback'+response);
