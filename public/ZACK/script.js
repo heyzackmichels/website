@@ -52,11 +52,19 @@ routerApp.controller('appControl', function($scope, $http, $state){
         ,url: 'https://store.steampowered.com/api/appdetails?appids=785790&format=json'
     }
 
-    $http(req_appdetails).then(function successCallback(response) {
-        console.log('successCallback'+response);
-    }, function errorCallback(response) {
-        console.log('errorCallback'+response);
-    });
+    // test
+    console.log('hello world');
+
+    // $http(req_appdetails).then(function successCallback(response) {
+    //     console.log('successCallback'+response);
+    // }, function errorCallback(response) {
+    //     console.log('errorCallback'+response);
+    // });
+
+    $http.get('https://store.steampowered.com/api/appdetails?appids=785790&format=json').then(function(response) {
+        // Add the response to the view
+        $scope.steamInfo = response.data;
+    }); 
 
     $scope.uiRouterState = $state;
 
