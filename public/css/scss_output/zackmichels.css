@@ -21,6 +21,11 @@ html {
   box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -28,7 +33,8 @@ body {
   color: #fff;
   counter-reset: myList;
   background: linear-gradient(137.42deg, #1A75FF 0%, #6A5DF8 50.43%, #C957E6 100%);
-  background-size: 300% 300%;
+  background-size: 100% 350%;
+  height: 100%;
   animation: gradient 60s ease infinite;
 }
 
