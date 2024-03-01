@@ -47,16 +47,20 @@ html {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     box-sizing: border-box;
 }
+html, body {
+    margin: 0;
+    height: 100%;
+}
 body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    // font-size: 14px;
     font-size: 14px;
     line-height: 1.42857143;
     color: $primary;
     // background-color: $primary-passive;
     counter-reset: myList;
     background: linear-gradient(137.42deg, #1A75FF 0%, #6A5DF8 50.43%, #C957E6 100%);
-    background-size: 300% 300%;
+    background-size: 100% 350%;
+    height: 100%;
     animation: gradient 60s ease infinite;
 }
 @keyframes gradient {
@@ -75,13 +79,11 @@ body {
     color: $primary-passive;
     background-color: $primary;
     .pure-menu-link {
-        // color: #fff;
         color: $highlight-color;
         text-decoration: none;
         &:focus,
         &:hover,
         &.active {
-            // background-color: #585858;
             background-color: $primary-active-menu;
         }
     }

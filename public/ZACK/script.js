@@ -81,7 +81,7 @@ routerApp.controller('appControl', function($scope, $http, $state){
                 }
                 ,{
                     name: 'Hot sauce'
-                    ,state: 'hotsauce'
+                    // ,state: 'hotsauce'
                 }
                 ,{name: 'Beer'}
                 ,{name: 'Sauerkraut'}
