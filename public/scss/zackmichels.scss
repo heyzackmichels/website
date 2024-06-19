@@ -59,7 +59,7 @@ body {
     // background-color: $primary-passive;
     counter-reset: myList;
     background: linear-gradient(134deg, #1A75FF, #6A5DF8, #C957E6);
-    background-size: 150vh;
+    background-size: 150%;
     background-attachment: fixed;
     min-height: 100%;
     animation: gradient 60s ease infinite;
@@ -116,6 +116,7 @@ body {
     }
 }
 .about {
+    padding-bottom: 20px;
     .profile {
         margin-bottom: 20px;
         &-pic img {

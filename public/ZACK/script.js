@@ -333,9 +333,9 @@ routerApp.controller('appControl', function($scope, $http, $state){
                 ,start: '2022'
                 ,end: 'Present'
                 ,subpoints: [
-                    {point:'works with support/product to triage/sort/define/repro/organize/prioritize requests/bugs'}
-                    ,{point:'creates maintains system & custom reports. utilizing custom or unified styling approaches'}
-                    ,{point:'review/estimate/execute proffessional service data manipulate/extract/transform/load/clean for clients and ingternal stakeholders'}
+                    // {point:'works with support/product to triage/sort/define/repro/organize/prioritize requests/bugs'}
+                    // ,{point:'creates maintains system & custom reports. utilizing custom or unified styling approaches'}
+                    // ,{point:'review/estimate/execute proffessional service data manipulate/extract/transform/load/clean for clients and ingternal stakeholders'}
                 ]
             }
             ,{
