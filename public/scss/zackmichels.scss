@@ -115,6 +115,18 @@ body {
         color: $primary-active;
     }
 }
+
+.a_target,
+a.a_target {
+    color: $primary-highlight-action;
+    text-decoration: none;
+    &:focus,
+    &:hover,
+    &.active {
+        color: $primary-highlight;
+    }
+}
+
 .about {
     padding-bottom: 20px;
     .profile {
@@ -361,8 +373,8 @@ $svg-door-closed: path("M596.699,579.6h-76.5V259.687c0-26.067-20.588-47.287-45.9
 .svg {
     position: relative;
     float:left;
-    margin: 50px;
-    height: 100px;
+    margin: 100px;
+    height: 200px;
     cursor: pointer;
     & path {
         transition: $transition-lg;
