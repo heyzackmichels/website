@@ -141,6 +141,7 @@ routerApp.controller('appControl', function($scope, $http, $state){
             ,icon: 'fas fa-code'
             ,state: 'svg'
             ,mvp: false
+            // ,onclick: 'init_svg()'
         }
         ,{
             title: 'Hot Sauce'
