@@ -17,7 +17,7 @@
         </div>
     </div>
     <div class="pure-u-1" ng-repeat="fresh in helloWorld | orderBy:'title'">
-        <div class="nav-link" ui-sref="{{fresh.state}}" title="{{fresh.description}}" id="{{fresh.state}}">
+        <div class="nav-link" ui-sref="{{fresh.state}}" title="{{fresh.description}}" id="{{fresh.state}}" onclick="init_svg()">
             <i class="{{fresh.icon}} nav-link-icon"></i>
             &nbsp;{{fresh.title}}
             <i class="fas fa-wrench under_construction" title="working on it" ng-if="!fresh.mvp"></i>

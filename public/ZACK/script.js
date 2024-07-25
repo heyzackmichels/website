@@ -128,35 +128,36 @@ routerApp.controller('appControl', function($scope, $http, $state){
     ];
 
     $scope.helloWorld = [
-        // {
-        //     title: 'Starting Sourdough'
-        //     ,description: 'Starter and bread observations'
-        //     ,icon: 'fas fa-ghost'
-        //     ,state: 'sourdough'
-        //     ,mvp: true
-        // }
-        // ,{
-        //     title: 'SVG'
-        //     ,description: 'svg, css, js, etc.'
-        //     ,icon: 'fas fa-code'
-        //     ,state: 'svg'
-        //     ,mvp: false
-        // }
-        // ,{
-        //     title: 'Hot Sauce'
-        //     ,description: 'working on it'
-        //     ,icon: 'fas fa-pepper-hot'
-        //     ,state: 'hotsauce'
-        //     ,mvp: false
-        // }
-        // ,{
-        //     title: 'Dumpling Matrix'
-        //     ,description: 'working on it'
-        //     ,icon: 'fas fa-utensils'
-        //     ,state: 'dumpling'
-        //     ,mvp: false
-        // }
         {
+            title: 'Starting Sourdough'
+            ,description: 'Starter and bread observations'
+            ,icon: 'fas fa-ghost'
+            ,state: 'sourdough'
+            ,mvp: true
+        }
+        ,{
+            title: 'SVG'
+            ,description: 'svg, css, js, etc.'
+            ,icon: 'fas fa-code'
+            ,state: 'svg'
+            ,mvp: false
+            // ,onclick: 'init_svg()'
+        }
+        ,{
+            title: 'Hot Sauce'
+            ,description: 'working on it'
+            ,icon: 'fas fa-pepper-hot'
+            ,state: 'hotsauce'
+            ,mvp: false
+        }
+        ,{
+            title: 'Dumpling Matrix'
+            ,description: 'working on it'
+            ,icon: 'fas fa-utensils'
+            ,state: 'dumpling'
+            ,mvp: false
+        }
+        ,{
             title: 'About'
             ,description: 'About Zack and this site'
             ,icon: 'fas fa-cog'
@@ -333,7 +334,7 @@ routerApp.controller('appControl', function($scope, $http, $state){
                 ,start: '2022'
                 ,end: 'Present'
                 ,subpoints: [
-                    // {point:'works with support/product to triage/sort/define/repro/organize/prioritize requests/bugs'}
+                    //  {point:'works with support/product to triage/sort/define/repro/organize/prioritize requests/bugs'}
                     // ,{point:'creates maintains system & custom reports. utilizing custom or unified styling approaches'}
                     // ,{point:'review/estimate/execute proffessional service data manipulate/extract/transform/load/clean for clients and ingternal stakeholders'}
                 ]
@@ -344,7 +345,7 @@ routerApp.controller('appControl', function($scope, $http, $state){
                 ,start: '2011'
                 ,end: '2021'
                 ,subpoints: [
-                    {point:'Builds designs (lo-fidelity to hi-fidelity) and end-to-end workflows for internal and client-facing experiences.'}
+                     {point:'Builds designs (lo-fidelity to hi-fidelity) and end-to-end workflows for internal and client-facing experiences.'}
                     ,{point:'Rapidly iterates and adjusts features based on customer feedback, application usage metrics, and stakeholder input.'}
                     ,{point:'Enhances application experience by modernizing features based on web and mobile best practices.'}
                     ,{point:'Collaborates with software developers by engineering initial layout and design for new features and polishing final output.'}
@@ -356,7 +357,7 @@ routerApp.controller('appControl', function($scope, $http, $state){
                 ,start: '2017'
                 ,end: '2021'
                 ,subpoints: [
-                    {point:'Streamlines agile process by serving as a liaison between product and tech teams to determine innovative solutions that consider technical limitations and product needs.'}
+                     {point:'Streamlines agile process by serving as a liaison between product and tech teams to determine innovative solutions that consider technical limitations and product needs.'}
                     ,{point:'Traces through application codebase to identify and update bugs and enhancement points.'}
                     ,{point:'Acquires extensive knowledge of business logic and processes to support engineering and product teams.'}
                     ,{point:'Generates reports and datasets for industry trends, client usage, feature adoption, and targeted data cleanup using SQL and Mixpanel.'}
@@ -368,7 +369,7 @@ routerApp.controller('appControl', function($scope, $http, $state){
                 ,start: '2013'
                 ,end: '2017'
                 ,subpoints: [
-                    {point:'Supports internal and client-facing applications by working closely with helpdesk, client services, and sales.'}
+                     {point:'Supports internal and client-facing applications by working closely with helpdesk, client services, and sales.'}
                     ,{point:'Creates stories and bugs while maintaining backlog in accordance to stakeholder priorities and issue severity.'}
                     ,{point:'Writes comprehensive acceptance criteria and test case steps for QA.'}
                     ,{point:'Facilitates scrum initiatives including standups, grooming sessions, sprint planning, and retrospectives.'}
@@ -385,7 +386,7 @@ routerApp.controller('appControl', function($scope, $http, $state){
             {
                 type: 'Experienced'
                 ,skills: [
-                    {name:'SQL'}
+                     {name:'SQL'}
                     ,{name:'HTML5'}
                     ,{name:'CSS3'}
                     ,{name:'SCSS'}
@@ -395,7 +396,7 @@ routerApp.controller('appControl', function($scope, $http, $state){
             ,{
                 type: 'Proficient'
                 ,skills: [
-                    {name:'Git'}
+                     {name:'Git'}
                     ,{name:'JavaScript'}
                     ,{name:'AngularJS'}
                     ,{name:'Adobe Suite'}
