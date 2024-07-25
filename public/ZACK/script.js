@@ -150,13 +150,13 @@ routerApp.controller('appControl', function($scope, $http, $state){
             ,state: 'hotsauce'
             ,mvp: false
         }
-        // ,{
-        //     title: 'Dumpling Matrix'
-        //     ,description: 'working on it'
-        //     ,icon: 'fas fa-utensils'
-        //     ,state: 'dumpling'
-        //     ,mvp: false
-        // }
+        ,{
+            title: 'Dumpling Matrix'
+            ,description: 'working on it'
+            ,icon: 'fas fa-utensils'
+            ,state: 'dumpling'
+            ,mvp: false
+        }
         ,{
             title: 'About'
             ,description: 'About Zack and this site'
