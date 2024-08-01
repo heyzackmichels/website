@@ -141,7 +141,7 @@ routerApp.controller('appControl', function($scope, $http, $state){
             ,icon: 'fas fa-code'
             ,state: 'svg'
             ,mvp: false
-            // ,onclick: 'init_svg()'
+            // ,onclick: 'init_page_ng'
         }
         ,{
             title: 'Hot Sauce'
@@ -404,6 +404,11 @@ routerApp.controller('appControl', function($scope, $http, $state){
             }
         ]
     }
+
+    $scope.init_page_ng = function() {
+        start_chart();
+        start_svg();
+    };
 
 
 }); //closes routerApp.controller

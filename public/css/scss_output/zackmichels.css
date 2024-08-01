@@ -396,4 +396,9 @@ svg.polygon polygon {
   stroke: #fff;
 }
 
+.highcharts-figure {
+  border: 1px solid #ff9900;
+  border-radius: 3px;
+}
+
 /*# sourceMappingURL=zackmichels.css.map */

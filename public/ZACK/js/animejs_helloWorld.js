@@ -1,11 +1,12 @@
 function init_svg() {
         start_svg()
 };
-window.onload = start_svg;
 
 function start_svg(){
 
     setTimeout( function() {
+
+        // console.log('hello from animejs');
 
         var tl = anime.timeline({
             loop: true,
