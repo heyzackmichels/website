@@ -1,0 +1,23 @@
+<div class="pure-g" style="height:90vh;">
+    <div class="pure-u-1 about-block">
+        <div class="about-block">
+            <div class="header">
+                <i class="fas fa-chart-pie"></i>&nbsp;chart
+            </div>
+        </div>
+    </div>
+    <div class="pure-u-1">
+        <figure class="highcharts-figure">
+            <div id="hello_world_chart" style="height:500px;"></div>
+        </figure>
+    </div>
+    <div class="pure-u-1">
+
+        <div class="pure-u-1" ng-repeat="chart in chart_items.theData | orderBy:'orderby'">
+            <div class="nav-link" title="{{chart.name}}" id="{{chart.name}}">
+                {{chart.name}} : {{chart.y}}%
+            </div>
+        </div>
+
+    </div>
+</div>

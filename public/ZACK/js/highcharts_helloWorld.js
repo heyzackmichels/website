@@ -1,79 +1,95 @@
-// $( document ).ready(function() {
-    $(window).load(function() {
+function init_chart() {
+    start_chart()
+};
 
-        setTimeout( function() {
-        
-            Highcharts.chart('venn_accountOutcome2', {
-                accessibility: {
-                    point: {
-                        valueDescriptionFormat: '{point.name}: {point.longDescription}.'
-                    }
-                },
-                credits: {
-                  enabled: false,
-                },
-                series: [{
-                    type: 'venn',
-                    data: [
-                      {
-                          sets: ['A'],
-                          value: 47,
-                          name: 'Viewed Accounts',
-                          longDescription: ''
-                      },
-                      {
-                          sets: ['B'],
-                          value: 20,
-                          name: 'My Property',
-                          longDescription: ''
-                      },
-                      {
-                          sets: ['A', 'B'],
-                          value: 3,
-                          name: 'Booked'
-                      },
-                      {
-                          sets: ['C'],
-                          value: 100,
-                          name: 'Comp Set',
-                          longDescription: ''
-                      },
-                      {
-                          sets: ['A', 'C'],
-                          value: 7,
-                          name: 'Booked'
-                      },
-                      {
-                          sets: ['D'],
-                          value: 200,
-                          name: 'My Market',
-                          longDescription: ''
-                      },
-                      {
-                          sets: ['A', 'D'],
-                          value: 5,
-                          name: 'Booked',
-                      },
-                      // {
-                      //     sets: ['B', 'D'],
-                      //     value: 2,
-                      //     name: 'Booked',
-                      // },
-              
-                    ]
-              
-                }],
-                tooltip: {
-                    headerFormat:
-                        '<span style="color:{point.color}">\u2022</span> ' +
-                        '<span style="font-size: 14px"> {point.point.name}</span><br/>',
-                    // pointFormat: '{point.point.name}'
-                },
-                title: {
-                    text: ''
+function start_chart(){
+
+    setTimeout( function() {
+
+        // console.log('hello from highcharts js');
+
+        Highcharts.chart('hello_world_chart', {
+            credits: {
+                enabled: false
+            },
+            chart: {              
+                type: 'pie',
+                backgroundColor: 'none'            
+            },
+            title: {
+                text: 'Egg Yolk Composition',
+                style: {
+                    color: '#fff'
                 }
-              });
-            
-        }, 500) //end timeout hack
+            },
+            tooltip: {
+                valueSuffix: '%'
+            },
+            subtitle: {
+                text: 'Source:<a href="https://www.mdpi.com/2072-6643/11/3/684/htm" target="_default">MDPI</a>',
+                style: {
+                    color: '#fff'
+                }
+            },
+            plotOptions: {
+                series: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: [{
+                        enabled: true,
+                        distance: 20
+                    }, {
+                        enabled: true,
+                        distance: -40,
+                        format: '{point.percentage:.1f}%',
+                        style: {
+                            fontSize: '1.2em',
+                            textOutline: 'none',
+                            opacity: 0.7
+                        },
+                        filter: {
+                            operator: '>',
+                            property: 'percentage',
+                            value: 10
+                        }
+                    }]
+                }
+            },
+            series: [
+                {
+                    name: 'Percentage',
+                    colorByPoint: true,
+                    data: [
+                        {
+                            name: 'Water',
+                            y: 55.02
+                        },
+                        {
+                            name: 'Fat',
+                            // sliced: true,
+                            // selected: true,
+                            y: 26.71
+                        },
+                        {
+                            name: 'Carbohydrates',
+                            y: 1.09
+                        },
+                        {
+                            name: 'Protein',
+                            y: 15.5
+                        },
+                        {
+                            name: 'Ash',
+                            y: 1.68
+                        }
+                    ]
+                }
+            ]
+        });
         
-    }); //end window load hack
+
+
+
+    }, 1000);
+
+}

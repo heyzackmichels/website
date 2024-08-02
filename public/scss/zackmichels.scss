@@ -62,7 +62,7 @@ body {
     background-size: 150%;
     background-attachment: fixed;
     min-height: 100%;
-    animation: gradient 60s ease infinite;
+    animation: gradient 30s ease infinite;
 }
 @keyframes gradient {
 	0% {
@@ -469,7 +469,21 @@ svg.polygon {
         & path {
             fill: transparent;
             stroke-width: 3px;
-            stroke: #9c27b0;
+            stroke: #fff;
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+// .highcharts-figure {
+//     border: 1px solid #ff9900;
+//     border-radius: 3px;
+// }

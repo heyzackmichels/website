@@ -37,9 +37,9 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: '/ZACK/pages/hotsauce.html',
             controller: ''
         })
-        .state('dumpling', {
-            url: '/dumpling',
-            templateUrl: '/ZACK/pages/dumpling.html',
+        .state('chart', {
+            url: '/chart',
+            templateUrl: '/ZACK/pages/chart.html',
             controller: ''
         });
 
@@ -134,6 +134,7 @@ routerApp.controller('appControl', function($scope, $http, $state){
             ,icon: 'fas fa-ghost'
             ,state: 'sourdough'
             ,mvp: true
+            ,orderby: 3             
         }
         ,{
             title: 'SVG'
@@ -141,7 +142,8 @@ routerApp.controller('appControl', function($scope, $http, $state){
             ,icon: 'fas fa-code'
             ,state: 'svg'
             ,mvp: false
-            // ,onclick: 'init_svg()'
+            // ,onclick: 'init_page_ng'
+            ,orderby: 6             
         }
         ,{
             title: 'Hot Sauce'
@@ -149,13 +151,15 @@ routerApp.controller('appControl', function($scope, $http, $state){
             ,icon: 'fas fa-pepper-hot'
             ,state: 'hotsauce'
             ,mvp: false
+            ,orderby: 5             
         }
         ,{
-            title: 'Dumpling Matrix'
+            title: 'Chart'
             ,description: 'working on it'
-            ,icon: 'fas fa-utensils'
-            ,state: 'dumpling'
+            ,icon: 'fas fa-chart-pie'
+            ,state: 'chart'
             ,mvp: false
+            ,orderby: 4             
         }
         ,{
             title: 'About'
@@ -163,6 +167,7 @@ routerApp.controller('appControl', function($scope, $http, $state){
             ,icon: 'fas fa-cog'
             ,state: 'about'
             ,mvp: true
+            ,orderby: 1            
         }
         ,{
             title: 'Connect'
@@ -170,6 +175,7 @@ routerApp.controller('appControl', function($scope, $http, $state){
             ,icon: 'fas fa-share-alt'
             ,state: 'connect'
             ,mvp: true
+            ,orderby: 2            
         }
     ];
 
@@ -404,6 +410,40 @@ routerApp.controller('appControl', function($scope, $http, $state){
             }
         ]
     }
+
+
+    $scope.chart_items = {
+        theData: [
+            {
+                name: 'Water',
+                y: 55.02
+            },
+            {
+                name: 'Fat',
+                // sliced: true,
+                // selected: true,
+                y: 26.71
+            },
+            {
+                name: 'Carbohydrates',
+                y: 1.09
+            },
+            {
+                name: 'Protein',
+                y: 15.5
+            },
+            {
+                name: 'Ash',
+                y: 1.68
+            }
+        ]
+    };
+
+
+    $scope.init_page_ng = function() {
+        start_chart();
+        start_svg();
+    };
 
 
 }); //closes routerApp.controller
