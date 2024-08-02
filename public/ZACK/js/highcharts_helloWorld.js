@@ -66,8 +66,8 @@ function start_chart(){
                         },
                         {
                             name: 'Fat',
-                            sliced: true,
-                            selected: true,
+                            // sliced: true,
+                            // selected: true,
                             y: 26.71
                         },
                         {
