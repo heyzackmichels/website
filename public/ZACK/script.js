@@ -37,9 +37,9 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: '/ZACK/pages/hotsauce.html',
             controller: ''
         })
-        .state('dumpling', {
-            url: '/dumpling',
-            templateUrl: '/ZACK/pages/dumpling.html',
+        .state('chart', {
+            url: '/chart',
+            templateUrl: '/ZACK/pages/chart.html',
             controller: ''
         });
 
@@ -154,10 +154,10 @@ routerApp.controller('appControl', function($scope, $http, $state){
             ,orderby: 5             
         }
         ,{
-            title: 'Dumpling Matrix'
+            title: 'Chart'
             ,description: 'working on it'
-            ,icon: 'fas fa-utensils'
-            ,state: 'dumpling'
+            ,icon: 'fas fa-chart-pie'
+            ,state: 'chart'
             ,mvp: false
             ,orderby: 4             
         }
@@ -412,32 +412,32 @@ routerApp.controller('appControl', function($scope, $http, $state){
     }
 
 
-    // $scope.chart_items = {
-    //     theData: [
-    //         {
-    //             name: 'Water',
-    //             y: 55.02
-    //         },
-    //         {
-    //             name: 'Fat',
-    //             // sliced: true,
-    //             // selected: true,
-    //             y: 26.71
-    //         },
-    //         {
-    //             name: 'Carbohydrates',
-    //             y: 1.09
-    //         },
-    //         {
-    //             name: 'Protein',
-    //             y: 15.5
-    //         },
-    //         {
-    //             name: 'Ash',
-    //             y: 1.68
-    //         }
-    //     ]
-    // };
+    $scope.chart_items = {
+        theData: [
+            {
+                name: 'Water',
+                y: 55.02
+            },
+            {
+                name: 'Fat',
+                // sliced: true,
+                // selected: true,
+                y: 26.71
+            },
+            {
+                name: 'Carbohydrates',
+                y: 1.09
+            },
+            {
+                name: 'Protein',
+                y: 15.5
+            },
+            {
+                name: 'Ash',
+                y: 1.68
+            }
+        ]
+    };
 
 
     $scope.init_page_ng = function() {
