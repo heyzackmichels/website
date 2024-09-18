@@ -32,7 +32,7 @@ body {
   line-height: 1.42857143;
   color: #fff;
   counter-reset: myList;
-  background: linear-gradient(134deg, #1A75FF, #6A5DF8, #C957E6);
+  background: linear-gradient(134deg, #004fc5, #02a199);
   background-size: 150%;
   background-attachment: fixed;
   min-height: 100%;
@@ -55,11 +55,11 @@ body {
   background-color: #fff;
 }
 .zack-menu .pure-menu-link {
-  color: #6A5DF8;
+  color: #004fc5;
   text-decoration: none;
 }
 .zack-menu .pure-menu-link:focus, .zack-menu .pure-menu-link:hover, .zack-menu .pure-menu-link.active {
-  background-color: #6A5DF825;
+  background-color: #004fc525;
 }
 
 .under_construction {
@@ -73,7 +73,7 @@ body {
   margin-top: 20px;
 }
 .profile-pic img {
-  border: 3px solid #6A5DF8;
+  border: 3px solid #004fc5;
   border-radius: 75px;
   max-width: 150px;
   max-height: 150px;
@@ -148,7 +148,7 @@ a.a_target.active {
 .about-block-list ol > li:before {
   content: counter(myList);
   counter-increment: myList;
-  color: #6A5DF8;
+  color: #004fc5;
   background-color: #fff;
   margin-right: 5px;
   font-weight: bold;

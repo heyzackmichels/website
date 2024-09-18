@@ -14,7 +14,8 @@
 // background gradient
 $primary: #fff;
 $primary-active: #fff;
-$primary-active-menu: #6A5DF825;
+// $primary-active-menu: #6A5DF825;
+$primary-active-menu: #004fc525;
 $primary-passive: #fff;
 $primary-highlight: #fff;
 $primary-highlight-action: #00fffb;
@@ -22,7 +23,8 @@ $primary-highlight-2: #fff;
 $transition-md: .25s;
 $transition-lg: 1s;
 $resume-color: #fff;
-$highlight-color: #6A5DF8;
+// $highlight-color: #6A5DF8;
+$highlight-color: #004fc5;
 
 @keyframes myMove {
     0% {
@@ -58,7 +60,9 @@ body {
     color: $primary;
     // background-color: $primary-passive;
     counter-reset: myList;
-    background: linear-gradient(134deg, #1A75FF, #6A5DF8, #C957E6);
+    // background: linear-gradient(134deg, #1A75FF, #6A5DF8, #C957E6);
+    // background: linear-gradient(134deg, #1A75FF,#509cd8,#34c7ae);
+    background: linear-gradient(134deg, #004fc5,#02a199);
     background-size: 150%;
     background-attachment: fixed;
     min-height: 100%;
