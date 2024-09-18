@@ -337,29 +337,35 @@ routerApp.controller('appControl', function($scope, $http, $state){
             {
                 title: 'Director, Insights & Reporting'
                 ,company: 'Tempest'
+                ,company_url: 'https://www.tempest.im/'
                 ,start: '2022'
                 ,end: 'Present'
                 ,subpoints: [
-                    //  {point:'works with support/product to triage/sort/define/repro/organize/prioritize requests/bugs'}
-                    // ,{point:'creates maintains system & custom reports. utilizing custom or unified styling approaches'}
-                    // ,{point:'review/estimate/execute proffessional service data manipulate/extract/transform/load/clean for clients and ingternal stakeholders'}
+                     {point:'Works directly with Data Architect and VP of Platforms to create and manage all reporting insights and visual dashboards within the CRM Platform.'}
+                    ,{point:'Defines design and experience best practices for all data visualizations and reports.'}
+                    ,{point:'Maintains request queue from clients and internal stakeholders for report creation and enhancements as well as professional service and internal data manipulation.'}
+                    ,{point:'Catalogs current usage and scope of existing system, standard, and custom offerings for more effective update strategies and targeted technical debt elimination'}
                 ]
             }
             ,{
-                title: 'UI/UX Designer'
+                title: 'Product Manager'
                 ,company: 'Knowland'
-                ,start: '2011'
+                ,company_url: 'https://www.knowland.com/'
+                ,start: '2013'
                 ,end: '2021'
                 ,subpoints: [
-                     {point:'Builds designs (lo-fidelity to hi-fidelity) and end-to-end workflows for internal and client-facing experiences.'}
-                    ,{point:'Rapidly iterates and adjusts features based on customer feedback, application usage metrics, and stakeholder input.'}
-                    ,{point:'Enhances application experience by modernizing features based on web and mobile best practices.'}
-                    ,{point:'Collaborates with software developers by engineering initial layout and design for new features and polishing final output.'}
+                     {point:'Supports internal and client-facing applications by working closely with helpdesk, client services, and sales.'}
+                    ,{point:'Creates stories and bugs while maintaining backlog in accordance with stakeholder priorities and issue severity.'}
+                    ,{point:'Writes comprehensive acceptance criteria and test case steps for QA.'}
+                    ,{point:'Facilitates scrum initiatives including standups, grooming sessions, sprint planning, and retrospectives.'}
+                    ,{point:'Utilizes data driven decisions for task prioritization and impactful end user experiences.'}
+                    ,{point:'Managed six remote development team contractors by defining tasks, performing testing, and approving output before release | 2011 - 2015.'}
                 ]
             }
             ,{
                 title: 'Business Analyst'
                 ,company: 'Knowland'
+                ,company_url: 'https://www.knowland.com/'
                 ,start: '2017'
                 ,end: '2021'
                 ,subpoints: [
@@ -368,24 +374,25 @@ routerApp.controller('appControl', function($scope, $http, $state){
                     ,{point:'Acquires extensive knowledge of business logic and processes to support engineering and product teams.'}
                     ,{point:'Generates reports and datasets for industry trends, client usage, feature adoption, and targeted data cleanup using SQL and Mixpanel.'}
                 ]
-            }
+            }            
             ,{
-                title: 'Product Manager'
+                title: 'UI/UX Designer'
                 ,company: 'Knowland'
-                ,start: '2013'
+                ,company_url: 'https://www.knowland.com/'
+                ,start: '2011'
                 ,end: '2017'
                 ,subpoints: [
-                     {point:'Supports internal and client-facing applications by working closely with helpdesk, client services, and sales.'}
-                    ,{point:'Creates stories and bugs while maintaining backlog in accordance to stakeholder priorities and issue severity.'}
-                    ,{point:'Writes comprehensive acceptance criteria and test case steps for QA.'}
-                    ,{point:'Facilitates scrum initiatives including standups, grooming sessions, sprint planning, and retrospectives.'}
-                    ,{point:'Managed six remote development team contractors by defining tasks, performing testing, and approving output before release | 2011 - 2015.'}
+                     {point:'Builds designs (lo-fidelity to hi-fidelity) and end-to-end workflows for internal and client-facing experiences.'}
+                    ,{point:'Rapidly iterates and adjusts features based on customer feedback, application usage metrics, and stakeholder input.'}
+                    ,{point:'Enhances application experience by modernizing features based on web and mobile best practices.'}
+                    ,{point:'Collaborates with software developers by engineering initial layout and design for new features and polishing final output.'}
                 ]
             }
             ,{
                 title: 'Bachelor of Science, Industrial Design'
                 ,start: '2010'
                 ,company: 'Virginia Polytechnic Institute and State University'
+                ,company_url: 'https://www.vt.edu/'
             }
         ]
         ,skills : [
